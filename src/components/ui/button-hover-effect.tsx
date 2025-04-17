@@ -13,7 +13,7 @@ export const ButtonHoverEffect = ({
 }: ButtonHoverEffectProps) => {
   return (
     <div className={cn("group relative", className)}>
-      <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-primary to-blue-500 opacity-30 blur-sm transition-all duration-300 group-hover:opacity-100 group-hover:blur" />
+      <div className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-primary to-blue-500 opacity-30 blur-sm transition-all duration-300 group-hover:opacity-100 group-hover:blur" />
       <div className="relative">{children}</div>
     </div>
   );
