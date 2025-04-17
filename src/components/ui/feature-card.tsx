@@ -22,22 +22,22 @@ export function FeatureCard({
 }: FeatureCardProps) {
   return (
     <div className={cn(
-      "glossy-card shine p-8 rounded-xl hover-glow transition-all duration-500 h-full flex flex-col",
+      "glass-morphism p-6 rounded-xl hover-glow transition-all duration-300 h-full flex flex-col",
       className
     )}>
-      <div className="flex items-center mb-6">
-        <div className="w-16 h-16 rounded-2xl primary-gradient flex items-center justify-center shadow-lg">
-          <Icon className="w-8 h-8 text-white" />
+      <div className="flex items-center mb-4">
+        <div className="w-12 h-12 rounded-xl primary-gradient flex items-center justify-center">
+          <Icon className="w-6 h-6 text-white" />
         </div>
       </div>
-      <h3 className="font-display text-xl font-semibold mb-3 gradient-text-blue">{title}</h3>
-      <p className="text-muted-foreground text-sm mb-6 flex-grow leading-relaxed">{description}</p>
+      <h3 className="font-display text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-muted-foreground text-sm mb-4 flex-grow">{description}</p>
       
       {ctaText && ctaAction && (
         <ButtonHoverEffect className="mt-auto">
           <button
             onClick={ctaAction}
-            className="w-full px-6 py-3 rounded-full bg-secondary text-white text-sm font-medium transition-all duration-300"
+            className="w-full px-4 py-2 rounded-lg bg-secondary text-white text-sm font-medium transition-all duration-300"
           >
             {ctaText}
           </button>
