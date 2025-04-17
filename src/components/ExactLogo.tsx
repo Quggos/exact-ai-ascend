@@ -10,7 +10,7 @@ export function ExactLogo({ className }: LogoProps) {
     <div className={cn("flex items-center space-x-1", className)}>
       <span className="font-display text-xl font-bold tracking-tight">
         <span className="text-gradient">EXACT</span>
-        <span className="text-blue-400 ml-1">AI</span>
+        <span className="text-primary ml-1">AI</span>
       </span>
     </div>
   );
