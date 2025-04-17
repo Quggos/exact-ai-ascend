@@ -1,3 +1,4 @@
+
 import { useRef, useState, useEffect } from "react";
 import { ExactLogo } from "@/components/ExactLogo";
 import { ButtonHoverEffect } from "@/components/ui/button-hover-effect";
@@ -201,8 +202,8 @@ const Index = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[40%] bg-primary/20 rounded-full blur-[120px] opacity-40"></div>
           </div>
           
-          <div className="container mx-auto flex flex-col gap-16 items-center relative z-10">
-            <div className="text-center max-w-3xl mx-auto animate-fade-in">
+          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-5 gap-16 items-center relative z-10">
+            <div className="lg:col-span-3 animate-fade-in">
               <div className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium mb-4">
                 AI Text Chat Assistants for Business
               </div>
@@ -210,28 +211,28 @@ const Index = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6">
                 Your Business, <span className="text-gradient">Elevated</span> by Conversational AI
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-muted-foreground mb-8 max-w-xl">
                 EXACT AI creates intelligent text chat assistants that transform customer interactions, automate support, and boost sales without losing the personal touch.
               </p>
               
-              <div className="flex flex-col gap-4 items-center">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <ButtonHoverEffect>
                   <button 
                     onClick={() => scrollToSection("demo")}
-                    className="px-6 py-3 rounded-full primary-gradient text-white font-medium flex items-center justify-center gap-2 w-full"
+                    className="px-6 py-3 rounded-full primary-gradient text-white font-medium flex items-center justify-center gap-2"
                   >
                     <MessageSquare className="w-5 h-5" />
                     Try Live Demo
                   </button>
                 </ButtonHoverEffect>
-                <p className="text-muted-foreground text-sm">*Starting from $4000</p>
+                <p className="text-muted-foreground text-sm mt-2 sm:mt-4 sm:ml-2">*Starting from $4000</p>
               </div>
             </div>
             
-            <div className="relative z-10 animate-fade-in w-full max-w-md mx-auto">
+            <div className="relative lg:col-span-2 z-10 animate-fade-in flex justify-center lg:justify-end">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-blue-400/10 rounded-3xl blur-3xl -z-10 opacity-70"></div>
-                <div className="glass-morphism rounded-3xl p-6 shadow-xl relative w-full">
+                <div className="glass-morphism rounded-3xl p-6 shadow-xl relative w-full max-w-md">
                   <div className="flex items-center mb-6">
                     <div className="w-2 h-2 bg-red-500 rounded-full mr-2"></div>
                     <div className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
