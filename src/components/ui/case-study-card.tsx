@@ -20,56 +20,56 @@ export function CaseStudyCard({
 }: CaseStudyCardProps) {
   return (
     <div className={cn(
-      "glass-morphism rounded-xl p-8 h-full flex flex-col transition-all duration-300",
+      "glossy-card shine p-10 h-full flex flex-col transition-all duration-300 hover:translate-y-[-5px]",
       className
     )}>
-      <h3 className="font-display text-xl font-semibold mb-6 text-gradient">{title}</h3>
+      <h3 className="font-display text-2xl font-semibold mb-8 text-gradient">{title}</h3>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
         {results.salesGrowth && (
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg primary-gradient flex items-center justify-center shadow-lg">
-              <TrendingUp className="w-5 h-5 text-white" />
+          <div className="flex items-center space-x-4 group hover:scale-105 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-xl primary-gradient flex items-center justify-center shadow-lg group-hover:shadow-blue-500/30">
+              <TrendingUp className="w-6 h-6 text-white" />
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">Sales Growth</p>
-              <p className="font-semibold">{results.salesGrowth}</p>
+              <p className="text-xs text-muted-foreground mb-1">Sales Growth</p>
+              <p className="font-semibold text-lg">{results.salesGrowth}</p>
             </div>
           </div>
         )}
         
         {results.moreClients && (
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg primary-gradient flex items-center justify-center shadow-lg">
-              <BarChart3 className="w-5 h-5 text-white" />
+          <div className="flex items-center space-x-4 group hover:scale-105 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-xl primary-gradient flex items-center justify-center shadow-lg group-hover:shadow-blue-500/30">
+              <BarChart3 className="w-6 h-6 text-white" />
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">More Clients</p>
-              <p className="font-semibold">{results.moreClients}</p>
+              <p className="text-xs text-muted-foreground mb-1">More Clients</p>
+              <p className="font-semibold text-lg">{results.moreClients}</p>
             </div>
           </div>
         )}
         
         {results.reducedCosts && (
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg primary-gradient flex items-center justify-center shadow-lg">
-              <Gauge className="w-5 h-5 text-white" />
+          <div className="flex items-center space-x-4 group hover:scale-105 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-xl primary-gradient flex items-center justify-center shadow-lg group-hover:shadow-blue-500/30">
+              <Gauge className="w-6 h-6 text-white" />
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">Reduced Costs</p>
-              <p className="font-semibold">{results.reducedCosts}</p>
+              <p className="text-xs text-muted-foreground mb-1">Reduced Costs</p>
+              <p className="font-semibold text-lg">{results.reducedCosts}</p>
             </div>
           </div>
         )}
         
         {results.moreFreeTime && (
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg primary-gradient flex items-center justify-center shadow-lg">
-              <Clock className="w-5 h-5 text-white" />
+          <div className="flex items-center space-x-4 group hover:scale-105 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-xl primary-gradient flex items-center justify-center shadow-lg group-hover:shadow-blue-500/30">
+              <Clock className="w-6 h-6 text-white" />
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">More Free Time</p>
-              <p className="font-semibold">{results.moreFreeTime}</p>
+              <p className="text-xs text-muted-foreground mb-1">More Free Time</p>
+              <p className="font-semibold text-lg">{results.moreFreeTime}</p>
             </div>
           </div>
         )}
