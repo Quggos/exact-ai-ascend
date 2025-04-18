@@ -6,6 +6,7 @@ import { PhoneMockup } from "@/components/ui/phone-mockup";
 import { FeatureCard } from "@/components/ui/feature-card";
 import { CaseStudyCard } from "@/components/ui/case-study-card";
 import { Button } from "@/components/ui/button";
+import Aurora from "@/blocks/Backgrounds/Aurora/Aurora";
 
 import {
   ArrowRight,
@@ -155,51 +156,58 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Header */}
-      <header className={`sticky top-0 z-50 ${isSticky ? 'glass-morphism backdrop-blur-xl' : 'bg-transparent'} transition-all duration-300 border-b border-white/5`}>
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <ExactLogo />
-          
-          <nav className="hidden md:flex space-x-8">
-            <button 
-              onClick={() => scrollToSection("use-cases")} 
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Use Cases
-            </button>
-            <button 
-              onClick={() => scrollToSection("features")} 
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Features
-            </button>
-            <button 
-              onClick={() => scrollToSection("support")} 
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Support
-            </button>
-            <button 
-              onClick={() => scrollToSection("results")} 
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Results
-            </button>
-          </nav>
-          
-          <ButtonHoverEffect>
-            <button onClick={() => scrollToSection("next-steps")} className="px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors">
-              Book a Call
-            </button>
-          </ButtonHoverEffect>
+      <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div className={`${isSticky ? 'bg-black/50 backdrop-blur-xl' : 'bg-transparent'} transition-all duration-200`}>
+          <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+            <ExactLogo />
+            
+            <nav className="hidden md:flex space-x-8">
+              <button 
+                onClick={() => scrollToSection("use-cases")} 
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                Use Cases
+              </button>
+              <button 
+                onClick={() => scrollToSection("features")} 
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                Features
+              </button>
+              <button 
+                onClick={() => scrollToSection("support")} 
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                Support
+              </button>
+              <button 
+                onClick={() => scrollToSection("results")} 
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                Results
+              </button>
+            </nav>
+            
+            <ButtonHoverEffect>
+              <button onClick={() => scrollToSection("next-steps")} className="px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors">
+                Book a Call
+              </button>
+            </ButtonHoverEffect>
+          </div>
         </div>
       </header>
 
       <main>
         {/* Hero Section */}
-        <section className="relative pt-16 pb-0.5 overflow-hidden glow">
-          {/*<div className="absolute inset-0 z-0">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[40%] bg-primary/20 rounded-full blur-[120px] opacity-40"></div>
-          </div>*/}
+        <section className="relative pt-28 pb-0.5 overflow-hidden">
+          <div className="absolute inset-0 w-full h-[50vh]">
+            <Aurora 
+              colorStops={["#1e40af", "#1d4ed8", "#2563eb"]}
+              amplitude={0.8}
+              blend={50}
+              speed={2}
+            />
+          </div>
           
           <div className="flex flex-col gap items-center relative z-10">
             <div className="text-center max-w-3xl mx-auto animate-fade-in">
@@ -207,7 +215,7 @@ const Index = () => {
                 AI Text Chat Assistants for Business
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-medium tracking-tight mb-6">
                 Your Business, <span className="text-gradient">Elevated</span> by Conversational AI
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
