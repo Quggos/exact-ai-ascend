@@ -22,22 +22,22 @@ export function FeatureCard({
 }: FeatureCardProps) {
   return (
     <div className={cn(
-      "backdrop-blur-xl bg-[#ffffff0d] border border-[#ffffff1a] shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)] p-6 rounded-xl hover:shadow-lg transition-all duration-300 h-full flex flex-col",
+      "glass-morphism p-6 rounded-xl hover-glow transition-all duration-300 h-full flex flex-col",
       className
     )}>
       <div className="flex items-center mb-4">
-        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#2B8AE2] via-[#2B8AE2cc] to-[#2B8AE299] flex items-center justify-center">
-          <Icon className="w-6 h-6 text-[#ffffff]" />
+        <div className="w-12 h-12 rounded-xl primary-gradient flex items-center justify-center">
+          <Icon className="w-6 h-6 text-white" />
         </div>
       </div>
-      <h3 className="font-display text-lg font-semibold mb-2 text-[#ffffff]">{title}</h3>
-      <p className="text-[#a1a1aa] text-sm mb-4 flex-grow">{description}</p>
+      <h3 className="font-display text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-muted-foreground text-sm mb-4 flex-grow">{description}</p>
       
       {ctaText && ctaAction && (
         <ButtonHoverEffect className="mt-auto">
           <button
             onClick={ctaAction}
-            className="w-full px-4 py-2 rounded-lg bg-[#27272a] text-[#ffffff] text-sm font-medium transition-all duration-300"
+            className="w-full px-4 py-2 rounded-lg bg-secondary text-white text-sm font-medium transition-all duration-300"
           >
             {ctaText}
           </button>
