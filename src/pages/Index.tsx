@@ -196,12 +196,12 @@ const Index = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative section-padding pt-28 pb-36 overflow-hidden glow">
-          <div className="absolute inset-0 z-0">
+        <section className="relative pt-16 pb-0.5 overflow-hidden glow">
+          {/*<div className="absolute inset-0 z-0">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[40%] bg-primary/20 rounded-full blur-[120px] opacity-40"></div>
-          </div>
+          </div>*/}
           
-          <div className="container mx-auto flex flex-col gap-16 items-center relative z-10">
+          <div className="flex flex-col gap items-center relative z-10">
             <div className="text-center max-w-3xl mx-auto animate-fade-in">
               <div className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium mb-4">
                 AI Text Chat Assistants for Business
@@ -218,7 +218,12 @@ const Index = () => {
                 <ButtonHoverEffect>
                   <button 
                     onClick={() => scrollToSection("demo")}
-                    className="px-6 py-3 rounded-full primary-gradient text-white font-medium flex items-center justify-center gap-2 w-full"
+                    className="px-6 py-3 rounded-full bg-black border-2 border-transparent bg-clip-padding relative font-medium flex items-center justify-center gap-2 w-full group hover:text-white transition-colors"
+                    style={{ 
+                      backgroundImage: 'linear-gradient(black, black), linear-gradient(to right, #3b82f6, #60a5fa)',
+                      backgroundOrigin: 'border-box',
+                      backgroundClip: 'padding-box, border-box'
+                    }}
                   >
                     <MessageSquare className="w-5 h-5" />
                     Try Live Demo
@@ -227,7 +232,19 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm">*Starting from $4000</p>
               </div>
             </div>
+
+            <div className="relative -z-10 animate-fade-in w-full -mt-20">
+              <div className="relative">
+                {/*<div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-blue-400/10 rounded-3xl blur-3xl -z-10 opacity-70"></div>*/}
+                <img 
+                  src="/hero-chat-mockup.png" 
+                  alt="EXACT AI Chat Interface" 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
             
+            {/* Chat interface - Currently disabled
             <div className="relative z-10 animate-fade-in w-full max-w-md mx-auto">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-blue-400/10 rounded-3xl blur-3xl -z-10 opacity-70"></div>
@@ -297,9 +314,10 @@ const Index = () => {
                 </div>
               </div>
             </div>
+            */}
           </div>
           
-          <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+          {/*<div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>*/}
         </section>
         
         {/* Problem Solution Section */}
