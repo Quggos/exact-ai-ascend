@@ -63,7 +63,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-white via-white/90 to-white/40 bg-clip-text text-transparent;
   }
   
   .glow {
