@@ -39,19 +39,19 @@ export const LiveDemo = ({ scrollToSection }: LiveDemoProps) => {
                       </button>
                       <button 
                         onClick={() => setActiveTab(1)}
-                        className={`w-full text-lg text-left px-4 py-3 rounded-xl transition-all ${activeTab === 1 ? 'bg-primary text-white' : 'bg-white/5 hover:bg-white/10'}`}
+                        className={`w-full text-lg text-left px-4 py-3 rounded-xl transition-all ${activeTab === 1 ? 'bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-white' : 'bg-white/5 hover:bg-white/10'}`}
                       >
                         Sales Inquiry
                       </button>
                       <button 
                         onClick={() => setActiveTab(2)}
-                        className={`w-full text-lg text-left px-4 py-3 rounded-xl transition-all ${activeTab === 2 ? 'bg-primary text-white' : 'bg-white/5 hover:bg-white/10'}`}
+                        className={`w-full text-lg text-left px-4 py-3 rounded-xl transition-all ${activeTab === 2 ? 'bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-white' : 'bg-white/5 hover:bg-white/10'}`}
                       >
                         Technical Question
                       </button>
                       <button 
                         onClick={() => setActiveTab(3)}
-                        className={`w-full text-lg text-left px-4 py-3 rounded-xl transition-all ${activeTab === 3 ? 'bg-primary text-white' : 'bg-white/5 hover:bg-white/10'}`}
+                        className={`w-full text-lg text-left px-4 py-3 rounded-xl transition-all ${activeTab === 3 ? 'bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-white' : 'bg-white/5 hover:bg-white/10'}`}
                       >
                         Subscription Management
                       </button>
@@ -61,19 +61,19 @@ export const LiveDemo = ({ scrollToSection }: LiveDemoProps) => {
                       <h4 className="font-medium text-lg mb-2">Key Benefits</h4>
                       <ul className="space-y-2">
                         <li className="flex items-center">
-                          <CheckCircle className="w-4 h-4 text-blue-400 mr-2" />
+                          <CheckCircle className="w-4 h-4 text-[#FFA4A4] mr-2" />
                           <span className="text-sm text-muted-foreground">Instant, accurate responses</span>
                         </li>
                         <li className="flex items-center">
-                          <CheckCircle className="w-4 h-4 text-blue-400 mr-2" />
+                          <CheckCircle className="w-4 h-4 text-[#FFA4A4] mr-2" />
                           <span className="text-sm text-muted-foreground">Natural conversation flow</span>
                         </li>
                         <li className="flex items-center">
-                          <CheckCircle className="w-4 h-4 text-blue-400 mr-2" />
+                          <CheckCircle className="w-4 h-4 text-[#FFA4A4] mr-2" />
                           <span className="text-sm text-muted-foreground">Consistent brand voice</span>
                         </li>
                         <li className="flex items-center">
-                          <CheckCircle className="w-4 h-4 text-blue-400 mr-2" />
+                          <CheckCircle className="w-4 h-4 text-[#FFA4A4] mr-2" />
                           <span className="text-sm text-muted-foreground">Contextual understanding</span>
                         </li>
                       </ul>

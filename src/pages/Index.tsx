@@ -5,6 +5,7 @@ import { LiveDemo } from "@/components/sections/LiveDemo";
 import { Footer } from "@/components/sections/Footer";
 import { UseCases } from "@/components/sections/UseCases";
 import { HowWeWork } from "@/components/sections/HowWeWork";
+import { Features } from "@/components/sections/Features";
 
 const Index = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -30,6 +31,7 @@ const Index = () => {
         <Hero scrollToSection={scrollToSection} />
         <UseCases scrollToSection={scrollToSection} />
         <HowWeWork />
+        <Features />
         <LiveDemo scrollToSection={scrollToSection} />
       </main>
       
