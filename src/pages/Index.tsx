@@ -7,6 +7,7 @@ import { UseCases } from '@/components/sections/UseCases';
 import { HowWeWork } from '@/components/sections/HowWeWork';
 import { Features } from '@/components/sections/Features';
 import { Support } from '@/components/sections/Support';
+import { HowItWorks } from '@/components/sections/HowItWorks';
 
 const Index = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -33,6 +34,7 @@ const Index = () => {
 				<UseCases scrollToSection={scrollToSection} />
 				<HowWeWork />
 				<Features />
+				<HowItWorks scrollToSection={scrollToSection} />
 				<LiveDemo scrollToSection={scrollToSection} />
 				<Support />
 			</main>

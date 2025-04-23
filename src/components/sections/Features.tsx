@@ -11,7 +11,7 @@ export const Features = () => {
 	return (
 		<section
 			id="features"
-			className="section-padding bg-black relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24"
+			className=" bg-black relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24"
 		>
 			<div className="container mx-auto relative z-10">
 				<div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16 md:mb-24">
@@ -30,10 +30,10 @@ export const Features = () => {
 					{/* First row with larger feature cards */}
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
+							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<BrainCircuit className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-white">
 								Emotion Detection
 							</h3>
 						</div>
@@ -46,10 +46,10 @@ export const Features = () => {
 
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
+							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Globe className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-white">
 								Multi-Lingual
 							</h3>
 						</div>
@@ -62,10 +62,10 @@ export const Features = () => {
 
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
+							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Zap className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-white">
 								CRM & Calendar Integration
 							</h3>
 						</div>
@@ -78,10 +78,10 @@ export const Features = () => {
 
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
+							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<MessageSquareDot className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-white">
 								Weekly Executive Report
 							</h3>
 						</div>
@@ -93,48 +93,48 @@ export const Features = () => {
 					</div>
 
 					{/* Second row with smaller feature cards */}
-					<div className="grid grid-cols-2 gap-6">
-						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-4">
+							<div className="flex flex-col items-center">
+								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<Database className="w-6 h-6 text-white" />
 								</div>
-								<h3 className="text-lg font-semibold text-white text-center">
+								<h3 className="text-md font-semibold text-white text-center">
 									Script-Free Conversations
 								</h3>
 							</div>
 						</div>
 
-						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
+						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-4">
+							<div className="flex flex-col items-center">
+								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<BarChart3 className="w-6 h-6 text-white" />
 								</div>
-								<h3 className="text-lg font-semibold text-white text-center">
+								<h3 className="text-md font-semibold text-white text-center">
 									Context Memory Between Calls
 								</h3>
 							</div>
 						</div>
 					</div>
 
-					<div className="grid grid-cols-2 gap-6">
-						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-4">
+							<div className="flex flex-col items-center">
+								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<BrainCircuit className="w-6 h-6 text-white" />
 								</div>
-								<h3 className="text-lg font-semibold text-white text-center">
+								<h3 className="text-md font-semibold text-white text-center">
 									Real-Time Lead Qualification
 								</h3>
 							</div>
 						</div>
 
-						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
+						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-5 sm:p-4">
+							<div className="flex flex-col items-center">
+								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<Globe className="w-6 h-6 text-white" />
 								</div>
-								<h3 className="text-lg font-semibold text-white text-center">
+								<h3 className="text-md font-semibold text-white text-center">
 									Fully Customizable to Your Workflow
 								</h3>
 							</div>
