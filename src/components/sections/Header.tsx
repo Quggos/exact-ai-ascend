@@ -83,14 +83,14 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 	}, [mobileMenuOpen]);
 
 	const menuClasses = mobileMenuOpen
-		? 'md:hidden bg-black backdrop-blur-xl absolute top-full left-0 right-0 animate-fade-in border-t border-white/10'
-		: 'md:hidden bg-black backdrop-blur-xl absolute top-full left-0 right-0 animate-fade-out opacity-0 pointer-events-none border-t border-white/10';
+		? 'lg:hidden bg-black backdrop-blur-xl absolute top-full left-0 right-0 animate-fade-in border-t border-white/10'
+		: 'lg:hidden bg-black backdrop-blur-xl absolute top-full left-0 right-0 animate-fade-out opacity-0 pointer-events-none border-t border-white/10';
 
 	// Create header background classes based on screen size and menu state
 	const headerBgClasses = isSticky
 		? 'bg-black backdrop-blur-xl transition-all duration-300'
 		: mobileMenuOpen
-		? 'md:bg-black md:backdrop-blur-none md:transition-all md:duration-300 bg-black backdrop-blur-xl'
+		? 'lg:bg-black lg:backdrop-blur-none lg:transition-all lg:duration-300 bg-black backdrop-blur-xl'
 		: 'bg-transparent transition-all duration-300';
 
 	return (
@@ -106,7 +106,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 						</div>
 
 						{/* Center section - Navigation for larger screens */}
-						<div className="hidden md:flex flex-1 justify-center">
+						<div className="hidden lg:flex flex-1 justify-center">
 							<nav className="flex space-x-8">
 								<button
 									onClick={() => scrollToSection('use-cases')}
@@ -201,7 +201,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 
 							{/* Mobile menu button */}
 							<button
-								className="md:hidden p-2 text-white focus:outline-none"
+								className="lg:hidden p-2 text-white focus:outline-none"
 								onClick={toggleMobileMenu}
 								disabled={isAnimating}
 							>
