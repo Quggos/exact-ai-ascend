@@ -17,8 +17,7 @@ export const Features = () => {
 				<div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16 md:mb-24">
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 						Features That Drive <span className="text-[#FF6B6B]">Results.</span>{' '}
-						<br />
-						Not Just Calls
+						<></>Not Just Calls
 					</h2>
 					<p className="text-gray-400 font-regular leading-relaxed tracking-[-0.02em] text-lg sm:text-xl md:text-2xl px-2 sm:px-0">
 						It's not just voice automation. It's smart, scalable infrastructure
@@ -31,7 +30,7 @@ export const Features = () => {
 					{/* First row with larger feature cards */}
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mr-4">
+							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<BrainCircuit className="w-6 h-6 text-white" />
 							</div>
 							<h3 className="text-xl sm:text-2xl font-semibold text-white">
@@ -47,7 +46,7 @@ export const Features = () => {
 
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mr-4">
+							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Globe className="w-6 h-6 text-white" />
 							</div>
 							<h3 className="text-xl sm:text-2xl font-semibold text-white">
@@ -63,7 +62,7 @@ export const Features = () => {
 
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mr-4">
+							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Zap className="w-6 h-6 text-white" />
 							</div>
 							<h3 className="text-xl sm:text-2xl font-semibold text-white">
@@ -79,7 +78,7 @@ export const Features = () => {
 
 					<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
-							<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mr-4">
+							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<MessageSquareDot className="w-6 h-6 text-white" />
 							</div>
 							<h3 className="text-xl sm:text-2xl font-semibold text-white">
@@ -97,7 +96,7 @@ export const Features = () => {
 					<div className="grid grid-cols-2 gap-6">
 						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
 							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mb-4">
+								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<Database className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg font-semibold text-white text-center">
@@ -108,7 +107,7 @@ export const Features = () => {
 
 						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
 							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mb-4">
+								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<BarChart3 className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg font-semibold text-white text-center">
@@ -121,7 +120,7 @@ export const Features = () => {
 					<div className="grid grid-cols-2 gap-6">
 						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
 							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mb-4">
+								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<BrainCircuit className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg font-semibold text-white text-center">
@@ -132,7 +131,7 @@ export const Features = () => {
 
 						<div className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
 							<div className="flex flex-col items-center mb-3">
-								<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF6B6B] to-[#FF8E53] flex items-center justify-center mb-4">
+								<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<Globe className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg font-semibold text-white text-center">
