@@ -6,7 +6,7 @@ export const HowWeWork = () => {
 		>
 			<div className="container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 md:mb-24">
-					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-white leading-tight sm:leading-tight px-2">
+					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-white leading-tight sm:leading-tight px-2 mb-4 sm:mb-6 md:mb-8">
 						Never Miss a{' '}
 						<span
 							style={{
