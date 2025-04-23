@@ -24,16 +24,16 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
 			<div className="flex flex-col gap items-center relative z-10">
 				<div className="text-center max-w-3xl mx-auto animate-fade-in">
 					<div className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium mb-4">
-						AI Text Chat Assistants for Business
+						AI VoiceBot that Talks, Books & Solves — Automatically
 					</div>
 
 					<h1 className="text-4xl md:text-5xl lg:text-6xl text-gradient font-display px-0.5 font-medium tracking-tight mb-4 sm:mb-6">
 						Your Business, Elevated by Conversational AI
 					</h1>
 					<p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 px-2 sm:px-0">
-						EXACT AI creates intelligent text chat assistants that transform
-						customer interactions, automate support, and boost sales without
-						losing the personal touch.
+						Turn conversations into conversions, bookings, or solutions —
+						instantly. This AI voicebot works around the clock to handle tasks,
+						talk to customers, and take action where it matters most.
 					</p>
 
 					<div className="flex flex-col gap-4 items-center">

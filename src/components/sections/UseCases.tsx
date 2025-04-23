@@ -11,17 +11,14 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 			<div className="container mx-auto">
 				<div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16">
 					<p className="text-black text-lg sm:text-xl md:text-3xl tracking-[-0.02em] font-semibold mb-2 sm:mb-3">
-						Investments & Publishing
+						Industries
 					</p>
 					<h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						We enable <br className="hidden sm:block" />
-						entrepreneurship
+						Where VoiceBot <br /> Works Best
 					</h2>
 					<p className="text-black font-medium leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-2xl">
-						In addition to supporting our in-house studios, we are always
-						looking to extend our resources to promising new projects in our
-						ecosystem. Our focus is on mobile apps and games, but we are also
-						evaluating opportunities in other exciting fields.
+						Smart automation for the tasks that drain your time — from handling
+						support calls to making outbound sales and everything in between.
 					</p>
 				</div>
 
@@ -39,46 +36,40 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							Customer Support
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Focus on growth and improvement
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Answers common questions automatically
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Embrace challenges as learning
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Takes notes, creates tickets, routes calls
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Cultivate a positive mindset
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Handles high volumes with zero wait time
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Build relationships with people
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Detects frustration & escalates smartly
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Set clear goals and create plans
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Available 24/7, speaks multiple languages
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Practice mindfulness and self-care
-								</span>
-							</li>
-							<li className="flex items-center justify-center gap-2">
-								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Celebrate small victories
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Can call back missed customers if needed
 								</span>
 							</li>
 						</ul>
@@ -86,7 +77,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							onClick={() => scrollToSection('demo')}
 							className="text-blue-500 text-base sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
 						>
-							Call To Action
+							Apply Now
 						</button>
 					</div>
 
@@ -103,46 +94,40 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							Sales
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Focus on growth and improvement
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Makes outbound calls and follows up leads
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Embrace challenges as learning
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Qualifies prospects with smart conversations
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Cultivate a positive mindset
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Books meetings straight to your calendar
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Build relationships with people
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Handles cold outreach with perfect scripts
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Set clear goals and create plans
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Works alongside your team — not instead of
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Practice mindfulness and self-care
-								</span>
-							</li>
-							<li className="flex items-center justify-center gap-2">
-								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Celebrate small victories
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Connects to your CRM in real time
 								</span>
 							</li>
 						</ul>
@@ -150,7 +135,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							onClick={() => scrollToSection('demo')}
 							className="text-blue-500 text-base sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
 						>
-							Call To Action
+							Apply Now
 						</button>
 					</div>
 
@@ -164,49 +149,43 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							/>
 						</div>
 						<h3 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-							Customized solution
+							Custom VoiceBot Solutions
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Focus on growth and improvement
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									HR screening, appointment reminders, surveys
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Embrace challenges as learning
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Order status updates or billing automation
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Cultivate a positive mindset
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Voice workflows built around your process
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Build relationships with people
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Full control over tone, logic, and scripts
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Set clear goals and create plans
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									Inbound, outbound — or both
 								</span>
 							</li>
-							<li className="flex items-center justify-center gap-2">
+							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Practice mindfulness and self-care
-								</span>
-							</li>
-							<li className="flex items-center justify-center gap-2">
-								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base tracking-[-0.02em]">
-									Celebrate small victories
+								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+									We build and maintain it all for you
 								</span>
 							</li>
 						</ul>
@@ -214,7 +193,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							onClick={() => scrollToSection('demo')}
 							className="text-blue-500 text-base sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
 						>
-							Call To Action
+							Apply Now
 						</button>
 					</div>
 				</div>

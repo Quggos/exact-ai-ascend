@@ -11,9 +11,9 @@ export const Features = () => {
 	const features = [
 		{
 			icon: BrainCircuit,
-			title: 'Contextual Understanding',
+			title: 'E-commerce & Retail',
 			description:
-				'Our AI remembers past conversations, understands complex queries, and maintains context throughout interactions.',
+				'Instantly answers product and delivery questions, Updates customers on shipping status or delays, Follows up on abandoned carts or incomplete orders, Manages returns and refunds with no agent needed, Works 24/7 during peak and off-hours',
 			gradient: 'from-[#FFA4A4] to-[#EB2525]',
 		},
 		{
@@ -68,12 +68,12 @@ export const Features = () => {
 						Features
 					</p>
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-gradient tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						Intelligence that <br className="hidden sm:block" />
-						adapts to your needs
+						This Is How <br className="hidden sm:block" />
+						Your Business Could Sound
 					</h2>
 					<p className="text-white/60 font-regular leading-relaxed sm:leading-12 tracking-[-0.02em] text-lg sm:text-xl md:text-2xl lg:text-3xl px-2 sm:px-0">
-						Our AI assistant combines cutting-edge technology with intuitive
-						design to deliver a seamless experience.
+						Let your customers talk — our VoiceBot listens, answers, and acts
+						like a real assistant, trained just for your business.
 					</p>
 				</div>
 

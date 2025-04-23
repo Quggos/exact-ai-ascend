@@ -7,13 +7,11 @@ export const HowWeWork = () => {
 			<div className="container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 md:mb-24">
 					<p className="text-white/60 text-xl sm:text-2xl md:text-3xl tracking-[-0.02em] font-medium mb-2 sm:mb-3">
-						How We Work
+						How it Works
 					</p>
 					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-white leading-tight sm:leading-tight px-2">
-						To build products{' '}
-						<span className="text-[#C1844D]">people love</span>, we created an
-						environment where <span className="text-[#EB6F6F]">passionate</span>{' '}
-						people thrive
+						Never Miss
+						<br /> a Lead Again
 					</h2>
 				</div>
 
@@ -29,13 +27,12 @@ export const HowWeWork = () => {
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
-								The Right People
+								Answer 100% of inbound calls, instantly
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em]">
-								We want to work with self-starters who can take the initiative
-								and solve problems independently with minimal direction. By
-								giving our people the space they need and providing them with
-								the most innovative tools, we trust them to do their part.
+								No voicemails. No dropped calls. No missed opportunities. Every
+								caller gets an immediate response, even outside working hours —
+								turning lost chances into captured leads.
 							</p>
 						</div>
 					</div>
@@ -51,14 +48,13 @@ export const HowWeWork = () => {
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
-								State-of-the-art Tech
+								Handle 90% of Customer Queries
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em]">
-								In our field, having a data-driven culture is essential for
-								success. Data empowers us to be more efficient and more precise,
-								that's why we live and breathe data. To support our brilliant
-								minds, we continuously build tech and data tools helping them
-								make well-informed decisions.
+								Let your voicebot take care of the repetitive stuff — instantly
+								answering common questions, guiding callers, and escalating when
+								needed. It frees up your team and makes customers feel heard
+								faster.
 							</p>
 						</div>
 					</div>
@@ -74,18 +70,13 @@ export const HowWeWork = () => {
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
-								Shared Values
+								Get Reports Your CEO Will Love
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em] mb-4">
-								At HubX, we believe in cultivating a culture with strong shared
-								values that serve a specific vision and strategy — that is our
-								magic formula.
-							</p>
-							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em]">
-								We seek out partners who share our passion, not employees. And
-								we work tirelessly to provide turbo-charged careers for
-								outstanding people who truly care about their work and making a
-								positive impact.
+								Real-time dashboards that show exactly what’s happening: calls
+								handled, leads qualified, issues flagged, and more. Delivered
+								daily or weekly — clear, customized insights without the
+								clutter.
 							</p>
 						</div>
 					</div>
