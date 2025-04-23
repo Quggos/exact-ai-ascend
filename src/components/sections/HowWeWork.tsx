@@ -6,13 +6,26 @@ export const HowWeWork = () => {
 		>
 			<div className="container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 md:mb-24">
-					<p className="text-white/60 text-xl sm:text-2xl md:text-3xl tracking-[-0.02em] font-medium mb-2 sm:mb-3">
-						How it Works
-					</p>
 					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-white leading-tight sm:leading-tight px-2">
-						Never Miss
-						<br /> a Lead Again
+						Never Miss a{' '}
+						<span
+							style={{
+								background:
+									'linear-gradient(to right, rgb(255, 165, 122), rgb(252, 87, 110))',
+								WebkitBackgroundClip: 'text',
+								backgroundClip: 'text',
+								color: 'transparent',
+							}}
+						>
+							Lead
+						</span>{' '}
+						Again
 					</h2>
+					<p className="text-white max-w-6xl mx-auto font-medium leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-2xl">
+						No voicemails. No dropped calls. No missed opportunities. Every
+						caller gets an immediate response, even outside working hours —
+						turning lost chances into captured leads.
+					</p>
 				</div>
 
 				<div className="space-y-16 sm:space-y-24 md:space-y-32">
@@ -73,7 +86,7 @@ export const HowWeWork = () => {
 								Get Reports Your CEO Will Love
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em] mb-4">
-								Real-time dashboards that show exactly what’s happening: calls
+								Real-time dashboards that show exactly what's happening: calls
 								handled, leads qualified, issues flagged, and more. Delivered
 								daily or weekly — clear, customized insights without the
 								clutter.

@@ -11,69 +11,69 @@ export const Features = () => {
 	const features = [
 		{
 			icon: BrainCircuit,
-			title: 'E-commerce & Retail',
+			title: 'Emotion Detection',
 			description:
-				'Instantly answers product and delivery questions, Updates customers on shipping status or delays, Follows up on abandoned carts or incomplete orders, Manages returns and refunds with no agent needed, Works 24/7 during peak and off-hours',
-			gradient: 'from-[#FFA4A4] to-[#EB2525]',
+				'Understands tone, urgency, and frustration in real time — so it speaks calmly when tension rises, and knows when to hand off to a human.',
+			gradient: 'from-[#FF6B6B] to-[#FF8E53]',
 		},
 		{
 			icon: Globe,
-			title: 'Multilingual Support',
+			title: 'Multi-Lingual',
 			description:
-				'Communicate with customers in over 30 languages with natural fluency and cultural awareness.',
-			gradient: 'from-[#FFA4A4] to-[#EB2525]',
+				'Supports over 100 languages and dialects with native-level fluency. From Mandarin to Portuguese, it adapts instantly to your customer’s language — no manual setup.',
+			gradient: 'from-[#36D1DC] to-[#5B86E5]',
 		},
 		{
 			icon: Zap,
-			title: 'Automated Workflows',
+			title: 'CRM & Calendar Integration',
 			description:
-				'Integrate with your business systems to automate tasks like appointment booking, order processing, and data entry.',
-			gradient: 'from-[#FFA4A4] to-[#EB2525]',
+				'Every lead, every booking, every customer update — automatically synced to your tools. Works seamlessly with Salesforce, HubSpot, Zoho, Outlook, Google Calendar, and more.',
+			gradient: 'from-[#8E2DE2] to-[#4A00E0]',
 		},
 		{
 			icon: MessageSquareDot,
-			title: 'Sentiment Analysis',
+			title: 'Weekly Executive Report',
 			description:
-				'Detect customer emotions and adapt responses to provide empathetic and appropriate assistance.',
-			gradient: 'from-[#FFA4A4] to-[#EB2525]',
+				'Every Monday, your team receives a clear summary of performance: calls handled, issues flagged, leads captured. Fully customized for your managers — no dashboards to dig through.',
+			gradient: 'from-[#11998E] to-[#38EF7D]',
 		},
 		{
 			icon: Database,
-			title: 'Custom Knowledge Base',
+			title: 'Custom Knowledge Integration',
 			description:
-				'Train your assistant with your product information, policies, and industry expertise for accurate responses.',
-			gradient: 'from-[#FFA4A4] to-[#EB2525]',
+				'Train the system with your specific business information, ensuring every response aligns perfectly with your products and policies.',
+			gradient: 'from-[#F857A6] to-[#FF5858]',
 		},
 		{
 			icon: BarChart3,
-			title: 'Analytics Dashboard',
+			title: 'Comprehensive Analytics',
 			description:
-				'Gain insights from conversations to improve products, services, and customer experience.',
-			gradient: 'from-[#FFA4A4] to-[#EB2525]',
+				'Gain valuable insights from customer interactions to identify trends, improve offerings, and make data-driven business decisions.',
+			gradient: 'from-[#FC5C7D] to-[#6A82FB]',
 		},
 	];
 
 	return (
 		<section
 			id="features"
-			className="section-padding bg-black relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24"
+			className="section-padding bg-white relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24"
 		>
 			{/* Background gradient effect */}
-			<div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black/90" />
-			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#EB2525]/10 via-transparent to-transparent" />
+			<div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white/90" />
+			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#6A82FB]/10 via-transparent to-transparent" />
 
 			<div className="container mx-auto relative z-10">
 				<div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-24">
-					<p className="text-white/60 text-xl sm:text-2xl md:text-3xl tracking-[-0.02em] font-medium mb-2 sm:mb-3">
+					<p className="text-gray-600 text-xl sm:text-2xl md:text-3xl tracking-[-0.02em] font-medium mb-2 sm:mb-3">
 						Features
 					</p>
-					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-gradient tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						This Is How <br className="hidden sm:block" />
-						Your Business Could Sound
+					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-gray-900 tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+						Features That Drive Results - Not Just Calls
 					</h2>
-					<p className="text-white/60 font-regular leading-relaxed sm:leading-12 tracking-[-0.02em] text-lg sm:text-xl md:text-2xl lg:text-3xl px-2 sm:px-0">
-						Let your customers talk — our VoiceBot listens, answers, and acts
-						like a real assistant, trained just for your business.
+					<p className="text-gray-600 font-regular leading-relaxed sm:leading-12 tracking-[-0.02em] text-lg sm:text-xl md:text-2xl lg:text-3xl px-2 sm:px-0">
+						It’s not just voice automation. It’s smart, scalable infrastructure
+						designed to solve real business problems — faster, cleaner, and more
+						human.
 					</p>
 				</div>
 
@@ -81,10 +81,10 @@ export const Features = () => {
 					{features.map((feature, index) => (
 						<div
 							key={index}
-							className="group relative bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:bg-white/10"
+							className="group relative bg-white border-transparent hover:border-gray-200 shadow-sm hover:shadow-md backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300"
 						>
 							<div
-								className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl sm:rounded-3xl"
+								className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-2xl sm:rounded-3xl"
 								style={{
 									backgroundImage: `linear-gradient(to bottom right, ${feature.gradient})`,
 								}}
@@ -92,26 +92,22 @@ export const Features = () => {
 
 							<div className="relative">
 								<div
-									className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-4 sm:mb-6`}
+									className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-5 sm:mb-6 shadow-md`}
 								>
-									<feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+									<feature.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
 								</div>
 
-								<h3 className="text-xl sm:text-2xl font-medium tracking-[-0.02em] text-white mb-2 sm:mb-4">
+								<h3 className="text-xl sm:text-2xl font-semibold tracking-[-0.02em] text-gray-900 mb-3 sm:mb-4">
 									{feature.title}
 								</h3>
 
-								<p className="text-white/60 text-base sm:text-lg leading-relaxed tracking-[-0.02em]">
+								<p className="text-gray-600 text-base sm:text-lg leading-relaxed tracking-[-0.01em]">
 									{feature.description}
 								</p>
 							</div>
 						</div>
 					))}
 				</div>
-
-				{/* Floating elements for visual interest */}
-				<div className="absolute top-1/4 left-1/4 w-32 h-32 sm:w-64 sm:h-64 bg-[#EB2525]/10 rounded-full blur-3xl" />
-				<div className="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-[#FFA4A4]/10 rounded-full blur-3xl" />
 			</div>
 		</section>
 	);

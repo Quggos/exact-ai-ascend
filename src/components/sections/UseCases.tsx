@@ -9,14 +9,15 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 			className="section-padding bg-[#fafafa] text-black px-4 sm:px-6 py-16 sm:py-24"
 		>
 			<div className="container mx-auto">
-				<div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16">
-					<p className="text-black text-lg sm:text-xl md:text-3xl tracking-[-0.02em] font-semibold mb-2 sm:mb-3">
-						Industries
-					</p>
+				<div className="text-center max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
 					<h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						Where VoiceBot <br /> Works Best
+						Where{' '}
+						<span className="bg-gradient-to-r from-[#DE7373] via-[#7A3D91] to-[#87448D] text-transparent bg-clip-text">
+							VoiceBot
+						</span>{' '}
+						Works Best
 					</h2>
-					<p className="text-black font-medium leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-2xl">
+					<p className="text-black/50 font-medium leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-2xl">
 						Smart automation for the tasks that drain your time — from handling
 						support calls to making outbound sales and everything in between.
 					</p>
@@ -27,7 +28,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					<div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
-								src="/card-icon.png"
+								src="/cube-hollow.png"
 								alt="Customer Support"
 								className="w-full h-full object-contain"
 							/>
@@ -85,7 +86,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					<div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
-								src="/card-icon.png"
+								src="/cube-shape.png"
 								alt="Sales"
 								className="w-full h-full object-contain"
 							/>
@@ -143,13 +144,13 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					<div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center sm:col-span-2 lg:col-span-1">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
-								src="/card-icon.png"
+								src="/star.png"
 								alt="Customized Solution"
 								className="w-full h-full object-contain"
 							/>
 						</div>
 						<h3 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-							Custom VoiceBot Solutions
+							Customized solution
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
 							<li className="flex items-center justify-start gap-2">
