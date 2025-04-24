@@ -1,5 +1,5 @@
 import { ButtonHoverEffect } from '@/components/ui/button-hover-effect';
-import { ExactLogo } from '@/components/ExactLogo';
+import { NextLogo } from '@/components/NextLogo';
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -107,9 +107,9 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 				<div className="container mx-auto px-4 sm:px-6 py-2">
 					<div className="flex items-center justify-between">
 						{/* Left section - Logo */}
-						<div className="w-[140px] sm:w-[200px]">
+						<div className="w-[82px] sm:w-[96px]">
 							<a href="/" className="block hover:opacity-90 transition-opacity">
-								<ExactLogo />
+								<NextLogo />
 							</a>
 						</div>
 

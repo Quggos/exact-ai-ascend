@@ -1,4 +1,4 @@
-import { ExactLogo } from '@/components/ExactLogo';
+import { NextLogo } from '@/components/NextLogo';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
@@ -19,7 +19,7 @@ export const Footer = () => {
 							className="block mb-4 hover:opacity-90 transition-opacity cursor-pointer"
 							aria-label="Scroll to top"
 						>
-							<ExactLogo className="w-[140px] sm:w-auto" />
+							<NextLogo className="w-[82px] sm:w-[96px]" />
 						</button>
 						<p className="text-xs sm:text-sm text-muted-foreground mb-4">
 							Transforming business communication with advanced AI text chat
