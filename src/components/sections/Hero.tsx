@@ -137,10 +137,10 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
           </div>
         </div>
 
-				<div className="relative -z-10 animate-fade-in w-full lg:-mt-20 mt-6 sm:mt-8">
+				<div className="relative -z-10 animate-fade-in w-full lg:-mt-8 mt-6 sm:mt-8">
 					<div className="relative">
 						<img 
-							src="/hero-chat-mockup.png" 
+							src="/hero-voice-d.png" 
 							alt="EXACT AI Chat Interface" 
 							className="w-full h-auto hidden lg:block"
 						/>
@@ -150,7 +150,7 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
 							className="w-full h-auto block lg:hidden"
 						/>
 						
-						<div className="absolute bottom-[30%] left-1/2 transform -translate-x-1/2">
+						<div className="absolute bottom-[30%] lg:bottom-[40%] left-1/2 transform -translate-x-1/2">
 							<AudioPlayer />
 						</div>
 					</div>

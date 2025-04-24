@@ -9,6 +9,7 @@ import { Features } from '@/components/sections/Features';
 import { Support } from '@/components/sections/Support';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { VoiceBotShowcase } from '@/components/sections/VoiceBotShowcase';
+import ProvenResults from '@/components/sections/ProvenResults';
 
 const Index = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -34,12 +35,12 @@ const Index = () => {
 				<Hero scrollToSection={scrollToSection} />
 				<UseCases scrollToSection={scrollToSection} />
 				<HowWeWork />
-				<Features />
-				<HowItWorks scrollToSection={scrollToSection} />
 				<VoiceBotShowcase />
+				<Features />
 				<Support />
+				<ProvenResults />
+				<HowItWorks scrollToSection={scrollToSection} />
 			</main>
-
 			<Footer />
 		</div>
 	);
