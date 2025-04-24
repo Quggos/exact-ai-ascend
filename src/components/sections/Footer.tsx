@@ -1,4 +1,5 @@
 import { ExactLogo } from '@/components/ExactLogo';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
 	const scrollToTop = () => {
@@ -128,18 +129,18 @@ export const Footer = () => {
 						© 2025 EXACT AI. All rights reserved.
 					</p>
 					<div className="flex space-x-4">
-						<a
-							href="#"
+						<Link
+							to="/privacy-policy"
 							className="text-xs text-muted-foreground hover:text-primary transition-colors"
 						>
 							Privacy Policy
-						</a>
-						<a
-							href="#"
+						</Link>
+						<Link
+							to="/terms-of-service"
 							className="text-xs text-muted-foreground hover:text-primary transition-colors"
 						>
 							Terms of Service
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
