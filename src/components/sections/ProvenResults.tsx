@@ -179,10 +179,8 @@ export default function ProvenResults() {
 			<div className="container max-w-7xl relative z-10 px-4 sm:px-6 lg:px-8">
 				<div className="flex flex-col items-center mb-16 text-center">
 					
-					<h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium tracking-tight mb-5">
-						<span className="text-black bg-clip-text">
-							Across Industries
-						</span>
+					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-black tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+							Proven Results Across Industries
 					</h2>
 					
 					<p className="text-black/80 font-regular leading-relaxed tracking-[-0.02em] text-lg sm:text-xl md:text-3xl max-w-4xl mx-auto">

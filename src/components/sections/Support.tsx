@@ -64,8 +64,8 @@ export const Support = () => {
 
 			<div className="lg:container md:container mx-auto relative z-10">
 				<div className="text-center max-w-6xl mx-auto mb-24">
-					<h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-gradient tracking-tight mb-5">
-						Not Just a VoiceBot — A Long-Term Growth Partner
+					<h2 className="text-4xl md:text-5xl pb-1 lg:text-7xl font-display font-medium text-gradient tracking-tight mb-5">
+						Not Just a VoiceBot <br/> A Long-Term Growth Partner
 					</h2>
 					<p className="text-white/60 font-regular leading-12 tracking-[-0.02em] text-xl sm:text-3xl">
 						Our dedicated support team ensures your AI system runs smoothly and

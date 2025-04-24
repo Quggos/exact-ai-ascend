@@ -1,13 +1,12 @@
 import { useRef, useState, useEffect } from 'react';
 import { Header } from '@/components/sections/Header';
 import { Hero } from '@/components/sections/Hero';
-import { LiveDemo } from '@/components/sections/LiveDemo';
 import { Footer } from '@/components/sections/Footer';
 import { UseCases } from '@/components/sections/UseCases';
-import { HowWeWork } from '@/components/sections/HowWeWork';
+import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Features } from '@/components/sections/Features';
 import { Support } from '@/components/sections/Support';
-import { HowItWorks } from '@/components/sections/HowItWorks';
+import { IntegrationProcess } from '@/components/sections/IntegrationProcess';
 import { VoiceBotShowcase } from '@/components/sections/VoiceBotShowcase';
 import ProvenResults from '@/components/sections/ProvenResults';
 
@@ -34,12 +33,12 @@ const Index = () => {
 			<main>
 				<Hero scrollToSection={scrollToSection} />
 				<UseCases scrollToSection={scrollToSection} />
-				<HowWeWork />
+				<HowItWorks />
 				<VoiceBotShowcase />
 				<Features />
 				<Support />
 				<ProvenResults />
-				<HowItWorks scrollToSection={scrollToSection} />
+				<IntegrationProcess scrollToSection={scrollToSection} />
 			</main>
 			<Footer />
 		</div>
