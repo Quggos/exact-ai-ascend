@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Development Guide
+
+## Getting Started
+
+1. Install dependencies: `npm install` or `yarn install`
+2. Start development server: `npm run dev` or `yarn dev`
+3. Build for production: `npm run build` or `yarn build`
+
+## Scripts
+
+The project defines the following scripts in [package.json](mdc:package.json):
+
+- `dev`: Start the development server
+- `build`: Build for production
+- `build:dev`: Build for development mode
+- `lint`: Run ESLint to check code quality
+- `preview`: Preview the production build locally
+
+## TypeScript
+
+The project uses TypeScript for type safety. Configuration files:
+
+- [tsconfig.json](mdc:tsconfig.json) - Main TypeScript configuration
+- [tsconfig.app.json](mdc:tsconfig.app.json) - App-specific TypeScript configuration
+- [tsconfig.node.json](mdc:tsconfig.node.json) - Node-specific TypeScript configuration
+
+## Path Aliases
+
+The `@/` path alias is configured to point to the `src` directory, allowing for clean imports:
+
+```tsx
+import { Button } from "@/components/ui/button";
+```

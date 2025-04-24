@@ -1,10 +1,7 @@
 export const HowWeWork = () => {
 	return (
-		<section
-			id="how-we-work"
-			className="section-padding bg-black px-4 sm:px-6 py-16 sm:py-24"
-		>
-			<div className="container mx-auto">
+		<section id="how-we-work" className="bg-black px-4 sm:px-6 py-16 sm:py-24">
+			<div className="lg:container md:container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 md:mb-24">
 					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-white leading-tight sm:leading-tight px-2 mb-4 sm:mb-6 md:mb-8">
 						Never Miss a{' '}

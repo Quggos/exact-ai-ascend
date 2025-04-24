@@ -15,9 +15,9 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 	return (
 		<section
 			id="how-it-works"
-			className="section-padding bg-black px-4 sm:px-6 py-16 sm:py-24"
+			className=" bg-black px-4 sm:px-6 py-16 sm:py-24"
 		>
-			<div className="container mx-auto">
+			<div className="lg:container md:container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 lg:mb-20">
 					<p className="text-white/70 text-base sm:text-lg md:text-xl font-medium mb-2 sm:mb-3">
 						How it works

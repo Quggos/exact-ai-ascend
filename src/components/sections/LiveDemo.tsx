@@ -13,9 +13,9 @@ export const LiveDemo = ({ scrollToSection }: LiveDemoProps) => {
 	return (
 		<section
 			id="demo"
-			className="section-padding bg-gradient-to-b from-black to-background relative"
+			className="bg-gradient-to-b from-black to-background relative"
 		>
-			<div className="container mx-auto">
+			<div className="lg:container md:container mx-auto">
 				<div className="text-center max-w-3xl mx-auto mb-16">
 					<p className="text-white/60 text-xl sm:text-2xl md:text-3xl tracking-[-0.02em] font-medium mb-2 sm:mb-3">
 						Investments & Publishing

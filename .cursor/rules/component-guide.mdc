@@ -1,0 +1,29 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Component Guide
+
+## UI Components
+
+The project uses ShadCN UI components which are located in the `src/components/ui` directory. These are pre-styled components built on top of Radix UI primitives and styled with TailwindCSS.
+
+## Custom Components
+
+- [src/components/ExactLogo.tsx](mdc:src/components/ExactLogo.tsx) - Logo component
+
+## Usage Pattern
+
+Components should be imported using the `@/` path alias:
+
+```tsx
+import { Button } from "@/components/ui/button";
+```
+
+## Best Practices
+
+1. Prefer composition over inheritance
+2. Keep components small and focused on a single responsibility
+3. Use TypeScript props interfaces for component props
+4. Leverage ShadCN UI components when possible instead of creating custom ones

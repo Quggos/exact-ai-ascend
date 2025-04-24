@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Routing Guide
+
+## Route Configuration
+
+Routes are defined in [src/App.tsx](mdc:src/App.tsx) using React Router's `Routes` and `Route` components.
+
+```tsx
+<Routes>
+  <Route path="/" element={<Index />} />
+  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+  <Route path="*" element={<NotFound />} />
+</Routes>
+```
+
+## Page Components
+
+- [src/pages/Index.tsx](mdc:src/pages/Index.tsx) - Homepage
+- [src/pages/NotFound.tsx](mdc:src/pages/NotFound.tsx) - 404 Not Found page
+
+## Adding New Routes
+
+1. Create a new page component in the `src/pages` directory
+2. Add a new `Route` component in `src/App.tsx` above the catch-all route
+3. Use the path parameter to define the URL pattern

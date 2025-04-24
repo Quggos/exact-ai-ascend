@@ -13,7 +13,7 @@ export const Features = () => {
 			id="features"
 			className=" bg-black relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24"
 		>
-			<div className="container mx-auto relative z-10">
+			<div className="lg:container md:container mx-auto relative z-10">
 				<div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16 md:mb-24">
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 						Features That Drive <span className="text-[#FF6B6B]">Results.</span>{' '}

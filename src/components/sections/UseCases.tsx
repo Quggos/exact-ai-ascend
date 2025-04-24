@@ -6,9 +6,9 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 	return (
 		<section
 			id="use-cases"
-			className="section-padding bg-[#fafafa] text-black px-4 sm:px-6 py-16 sm:py-24"
+			className="bg-[#fafafa] text-black px-4 sm:px-6 py-16 sm:py-24"
 		>
-			<div className="container mx-auto">
+			<div className="lg:container md:container mx-auto">
 				<div className="text-center max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
 					<h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 						Where{' '}

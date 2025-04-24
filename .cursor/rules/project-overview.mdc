@@ -1,0 +1,23 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Overview
+
+This is a React application built with Vite, TypeScript, and ShadCN UI components. The project uses TailwindCSS for styling and React Router for navigation.
+
+## Main Entry Points
+
+- [src/main.tsx](mdc:src/main.tsx) - The application entry point
+- [src/App.tsx](mdc:src/App.tsx) - The main application component that sets up routing and providers
+- [src/pages/Index.tsx](mdc:src/pages/Index.tsx) - The homepage component
+
+## Core Dependencies
+
+- React 18
+- React Router
+- TailwindCSS
+- ShadCN UI
+- React Query
+- TypeScript
