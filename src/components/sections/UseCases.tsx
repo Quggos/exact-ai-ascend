@@ -24,7 +24,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					<div className="bg-white border border-gray-200 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
-								src="/cube-hollow.png"
+								src="/frame-71.png"
 								alt="Customer Support"
 								className="w-full h-full object-contain"
 							/>
@@ -82,7 +82,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					<div className="bg-white border border-gray-200 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
-								src="/cube-shape.png"
+								src="/frame-73.png"
 								alt="Sales"
 								className="w-full h-full object-contain"
 							/>
@@ -140,7 +140,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					<div className="bg-white border border-gray-200 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center sm:col-span-2 lg:col-span-1">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
-								src="/star.png"
+								src="/frame-72.png"
 								alt="Customized Solution"
 								className="w-full h-full object-contain"
 							/>

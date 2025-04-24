@@ -29,11 +29,13 @@ export const HowItWorks = () => {
 					{/* The Right People */}
 					<div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 						<div className="w-full md:w-1/2 flex justify-center items-center">
-							<img
-								src="/temp-image.png"
-								alt="Team member"
-								className="w-full max-w-[300px] md:max-w-[400px] lg:w-96"
-							/>
+							<div className="w-full h-[300px] max-w-[300px] md:h-[400px] md:max-w-[400px] lg:h-[400px] lg:w-[400px] relative flex items-center justify-center">
+								<img
+									src="/frame-67.png"
+									alt="Team member"
+									className="w-full h-full object-contain"
+								/>
+							</div>
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
@@ -50,11 +52,13 @@ export const HowItWorks = () => {
 					{/* State-of-the-art Tech */}
 					<div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16">
 						<div className="w-full md:w-1/2 flex justify-center items-center">
-							<img
-								src="/temp-image.png"
-								alt="Laptop"
-								className="w-full max-w-[300px] md:max-w-[400px] lg:w-96"
-							/>
+							<div className="w-full h-[300px] max-w-[300px] md:h-[400px] md:max-w-[400px] lg:h-[400px] lg:w-[400px] relative flex items-center justify-center">
+								<img
+									src="/frame-68.png"
+									alt="Laptop"
+									className="w-full h-full object-contain"
+								/>
+							</div>
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
@@ -72,11 +76,13 @@ export const HowItWorks = () => {
 					{/* Shared Values */}
 					<div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 						<div className="w-full md:w-1/2 flex justify-center items-center">
-							<img
-								src="/temp-image.png"
-								alt="Team"
-								className="w-full max-w-[300px] md:max-w-[400px] lg:w-96"
-							/>
+							<div className="w-full h-[300px] max-w-[300px] md:h-[400px] md:max-w-[400px] lg:h-[400px] lg:w-[400px] relative flex items-center justify-center">
+								<img
+									src="/frame-69.png"
+									alt="Team"
+									className="w-full h-full object-contain"
+								/>
+							</div>
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
