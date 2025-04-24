@@ -29,7 +29,7 @@ export const Features = () => {
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					{/* First row with larger feature cards */}
-					<div className="group relative bg-white rounded-2xl p-6 sm:p-8">
+					<div className="group relative bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<BrainCircuit className="w-6 h-6 text-white" />
@@ -45,7 +45,7 @@ export const Features = () => {
 						</p>
 					</div>
 
-					<div className="group relative bg-white rounded-2xl p-6 sm:p-8">
+					<div className="group relative bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Globe className="w-6 h-6 text-white" />
@@ -61,7 +61,7 @@ export const Features = () => {
 						</p>
 					</div>
 
-					<div className="group relative bg-white rounded-2xl p-6 sm:p-8">
+					<div className="group relative bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Zap className="w-6 h-6 text-white" />
@@ -77,7 +77,7 @@ export const Features = () => {
 						</p>
 					</div>
 
-					<div className="group relative bg-white rounded-2xl p-6 sm:p-8">
+					<div className="group relative bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
 						<div className="flex items-start mb-4">
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<MessageSquareDot className="w-6 h-6 text-white" />
@@ -95,7 +95,7 @@ export const Features = () => {
 
 					{/* Second row with smaller feature cards */}
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-						<div className="group relative bg-white rounded-2xl p-5 sm:p-4">
+						<div className="group relative bg-white border border-gray-200 rounded-2xl p-5 sm:p-4">
 							<div className="flex flex-col items-center">
 								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<Database className="w-6 h-6 text-white" />
@@ -106,7 +106,7 @@ export const Features = () => {
 							</div>
 						</div>
 
-						<div className="group relative bg-white rounded-2xl p-5 sm:p-4">
+						<div className="group relative bg-white border border-gray-200 rounded-2xl p-5 sm:p-4">
 							<div className="flex flex-col items-center">
 								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<BarChart3 className="w-6 h-6 text-white" />
@@ -119,7 +119,7 @@ export const Features = () => {
 					</div>
 
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-						<div className="group relative bg-white rounded-2xl p-5 sm:p-4">
+						<div className="group relative bg-white border border-gray-200 rounded-2xl p-5 sm:p-4">
 							<div className="flex flex-col items-center">
 								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<BrainCircuit className="w-6 h-6 text-white" />
@@ -130,7 +130,7 @@ export const Features = () => {
 							</div>
 						</div>
 
-						<div className="group relative bg-white rounded-2xl p-5 sm:p-4">
+						<div className="group relative bg-white border border-gray-200 rounded-2xl p-5 sm:p-4">
 							<div className="flex flex-col items-center">
 								<div className="w-12 h-12 min-h-[48px] rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mb-4">
 									<Globe className="w-6 h-6 text-white" />

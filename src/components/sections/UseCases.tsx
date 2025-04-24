@@ -21,7 +21,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 					{/* Customer Support Card */}
-					<div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
+					<div className="bg-white border border-gray-200 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
 								src="/cube-hollow.png"
@@ -79,7 +79,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					</div>
 
 					{/* Sales Card */}
-					<div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
+					<div className="bg-white border border-gray-200 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
 								src="/cube-shape.png"
@@ -137,7 +137,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 					</div>
 
 					{/* Customized Solution Card */}
-					<div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center sm:col-span-2 lg:col-span-1">
+					<div className="bg-white border border-gray-200 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl text-center sm:col-span-2 lg:col-span-1">
 						<div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 mx-auto mb-4 sm:mb-6">
 							<img
 								src="/star.png"
