@@ -152,9 +152,10 @@ export default function ProvenResults() {
 			<div className="container max-w-7xl relative z-10">
 				<div className="flex flex-col items-center mb-8 md:mb-10 text-center">
 					<h2 className="text-4xl md:text-5xl font-display font-medium tracking-tight mb-4">
-						<span className="text-black">Across Industries</span>
+						<span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-black tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+							Across Industries</span>
 					</h2>
-					<p className="text-lg md:text-xl text-gray-600 max-w-3xl">
+					<p className="text-black/80 font-regular leading-relaxed tracking-[-0.02em] text-lg sm:text-xl md:text-3xl px-2 sm:px-0">
 						Smart businesses are already integrating AI into their operations —
 						not to catch up, but to lead. This is where the future of customer
 						interaction begins.
@@ -214,7 +215,7 @@ export default function ProvenResults() {
 															className="flex flex-col items-center"
 														>
 															<div
-																className="w-full py-2 md:py-8 rounded-lg flex flex-col items-center justify-center"
+																className="w-full py-2 md:py-8 rounded-[32px] flex flex-col items-center justify-center"
 																style={{
 																	background:
 																		'linear-gradient(to right, #FFA4A4, #EB2525)',

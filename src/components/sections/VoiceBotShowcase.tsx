@@ -249,7 +249,7 @@ export const VoiceBotShowcase = () => {
         {/* Heading area */}
         <div className="text-center mb-16">
           
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-display font-medium text-gradient tracking-tight mb-5">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-gradient tracking-tight mb-5">
             This Is How Your Business Could{' '}
             <span className="relative inline-block">
               <span className="relative z-10 bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-transparent bg-clip-text">Sound</span>

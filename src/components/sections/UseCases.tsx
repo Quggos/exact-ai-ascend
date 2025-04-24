@@ -10,7 +10,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 		>
 			<div className="lg:container md:container mx-auto">
 				<div className="text-center max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
-					<h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 						Where VoiceBot Works Best
 					</h2>
 					<p className="text-black/60 leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-3xl">
@@ -29,50 +29,50 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 								className="w-full h-full object-contain"
 							/>
 						</div>
-						<h3 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+						<h3 className="text-3xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 							Customer Support
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Answers common questions automatically
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Takes notes, creates tickets, routes calls
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Handles high volumes with zero wait time
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Detects frustration & escalates smartly
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Available 24/7, speaks multiple languages
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Can call back missed customers if needed
 								</span>
 							</li>
 						</ul>
 						<button
 							onClick={() => scrollToSection('demo')}
-							className="text-blue-500 text-base sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
+							className="text-blue-500 text-lg sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
 						>
 							Apply Now
 						</button>
@@ -87,50 +87,50 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 								className="w-full h-full object-contain"
 							/>
 						</div>
-						<h3 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+						<h3 className="text-3xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 							Sales
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Makes outbound calls and follows up leads
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Qualifies prospects with smart conversations
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Books meetings straight to your calendar
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Handles cold outreach with perfect scripts
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Works alongside your team — not instead of
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Connects to your CRM in real time
 								</span>
 							</li>
 						</ul>
 						<button
 							onClick={() => scrollToSection('demo')}
-							className="text-blue-500 text-base sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
+							className="text-blue-500 text-lg sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
 						>
 							Apply Now
 						</button>
@@ -145,50 +145,50 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 								className="w-full h-full object-contain"
 							/>
 						</div>
-						<h3 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
+						<h3 className="text-3xl sm:text-3xl md:text-4xl font-medium tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
 							Customized solution
 						</h3>
 						<ul className="text-center space-y-1 mb-6 sm:mb-8 md:mb-12">
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									HR screening, appointment reminders, surveys
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Order status updates or billing automation
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Voice workflows built around your process
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Full control over tone, logic, and scripts
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									Inbound, outbound — or both
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
-								<span className="text-black/70 text-sm sm:text-base text-left tracking-[-0.02em]">
+								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
 									We build and maintain it all for you
 								</span>
 							</li>
 						</ul>
 						<button
 							onClick={() => scrollToSection('demo')}
-							className="text-blue-500 text-base sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
+							className="text-blue-500 text-lg sm:text-lg md:text-xl font-medium tracking-[-0.02em] hover:underline"
 						>
 							Apply Now
 						</button>
