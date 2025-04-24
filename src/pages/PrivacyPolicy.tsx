@@ -1,15 +1,19 @@
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const PrivacyPolicy = () => {
 	const [isSticky, setIsSticky] = useState(false);
+	const topRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			setIsSticky(window.scrollY > 50);
 		};
 		window.addEventListener('scroll', handleScroll);
+
+		window.scrollTo(0, 0);
+
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
@@ -18,7 +22,10 @@ const PrivacyPolicy = () => {
 	};
 
 	return (
-		<div className="min-h-screen bg-black text-foreground overflow-x-hidden">
+		<div
+			className="min-h-screen bg-black text-foreground overflow-x-hidden"
+			ref={topRef}
+		>
 			<Header isSticky={isSticky} scrollToSection={scrollToSection} />
 
 			<main className="container mx-auto px-4 sm:px-8 py-16 sm:py-24">
