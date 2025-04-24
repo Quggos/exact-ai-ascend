@@ -157,7 +157,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 						<div className="flex items-center justify-end gap-2 sm:gap-6">
 							<div className="hidden sm:flex items-center gap-4">
 								<a
-									href="https://facebook.com"
+									href="https://facebook.com/61574399337370/"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="hover:text-[#FC576E] transition-colors"
@@ -177,7 +177,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 									</svg>
 								</a>
 								<a
-									href="https://linkedin.com"
+									href="https://linkedin.com/company/exct"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="hover:text-[#FC576E] transition-colors"
