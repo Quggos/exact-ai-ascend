@@ -163,14 +163,6 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 							Book a Call
 						</button>
 					</ButtonHoverEffect>
-					<ButtonHoverEffect className="w-fit">
-						<button
-							onClick={() => scrollToSection('demo')}
-							className="px-5 py-3 sm:px-8 sm:py-4 rounded-full bg-white text-black text-sm font-medium hover:bg-white/90 transition-colors"
-						>
-							Request a Demo
-						</button>
-					</ButtonHoverEffect>
 				</div>
 
 				<p className="text-white/50 text-center text-xs sm:text-sm mt-6 sm:mt-8">

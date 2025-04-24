@@ -1,5 +1,5 @@
 import { ButtonHoverEffect } from "@/components/ui/button-hover-effect";
-import { MessageSquare, Play, Pause } from "lucide-react";
+import { MessageSquare, Play, Pause, Calendar } from "lucide-react";
 import Aurora from "@/blocks/Backgrounds/Aurora/Aurora";
 import { useAudioPlayer } from "react-use-audio-player";
 import { motion, AnimatePresence } from "framer-motion";
@@ -129,8 +129,8 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
                   backgroundClip: 'padding-box, border-box'
                 }}
               >
-                <MessageSquare className="w-5 h-5" />
-                Try Live Demo
+                <Calendar className="w-5 h-5" />
+                Book a Call
               </button>
             </ButtonHoverEffect>
             <p className="text-muted-foreground text-sm">*Starting from $4000</p>

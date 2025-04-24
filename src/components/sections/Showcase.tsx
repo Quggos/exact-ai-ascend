@@ -396,7 +396,7 @@ export const Showcase = () => {
 								backgroundClip: 'padding-box, border-box',
 							}}
 						>
-							Learn more
+							Book a Call
 						</button>
 					</ButtonHoverEffect>
 				</div>
