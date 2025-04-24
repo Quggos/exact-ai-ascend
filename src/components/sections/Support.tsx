@@ -54,7 +54,10 @@ export const Support = () => {
 	];
 
 	return (
-		<section id="support" className=" bg-black relative overflow-hidden">
+		<section
+			id="support"
+			className=" bg-black relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24"
+		>
 			{/* Background gradient effect */}
 			<div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black/90" />
 			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#EB2525]/10 via-transparent to-transparent" />
