@@ -43,7 +43,7 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 										<PlayCircle className="w-6 h-6 text-white" />
 									</div>
 								</div>
-								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-40">
+								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-80">
 									1
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
@@ -66,7 +66,7 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 										<Workflow className="w-6 h-6 text-white" />
 									</div>
 								</div>
-								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-40">
+								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-80">
 									2
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
@@ -91,7 +91,7 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 										<Code className="w-6 h-6 text-white" />
 									</div>
 								</div>
-								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-40">
+								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-80">
 									3
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
@@ -113,7 +113,7 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 										<GraduationCap className="w-6 h-6 text-white" />
 									</div>
 								</div>
-								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-40">
+								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-80">
 									4
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
@@ -135,7 +135,7 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 										<LineChart className="w-6 h-6 text-white" />
 									</div>
 								</div>
-								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-40">
+								<div className="absolute top-6 right-6 text-6xl font-bold text-zinc-800 opacity-80">
 									5
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
