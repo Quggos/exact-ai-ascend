@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
 								1. Introduction
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
-								At EXACT AI, we take your privacy seriously. This Privacy Policy
+								At NEXT APP, we take your privacy seriously. This Privacy Policy
 								explains how we collect, use, disclose, and safeguard your
 								information when you visit our website or use our AI text chat
 								assistant services. We are committed to protecting your personal
@@ -368,10 +368,10 @@ const PrivacyPolicy = () => {
 							<div className="mt-6 space-y-2 text-gray-300">
 								<p>
 									<strong className="text-white">Email:</strong>{' '}
-									hello@exactai.com
+									hello@NEXT APPai.com
 								</p>
 								<p>
-									<strong className="text-white">Postal Address:</strong> EXACT
+									<strong className="text-white">Postal Address:</strong> NEXT APP
 									AI Headquarters, 123 Innovation Drive, San Francisco, CA
 									94105, USA
 								</p>

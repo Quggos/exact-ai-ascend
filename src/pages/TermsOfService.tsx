@@ -44,14 +44,14 @@ const TermsOfService = () => {
 								1. Acceptance of Terms
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
-								By accessing or using EXACT AI's website and services, you agree
+								By accessing or using NEXT APP's website and services, you agree
 								to be bound by these Terms of Service. If you do not agree to
 								all the terms and conditions, you must not access or use our
 								services.
 							</p>
 							<p className="text-gray-300 leading-relaxed mt-4">
 								These Terms of Service constitute a legally binding agreement
-								between you and EXACT AI regarding your use of our website and
+								between you and NEXT APP regarding your use of our website and
 								AI text chat assistant services. By registering for an account,
 								accessing our platform, or using any of our services, you
 								acknowledge that you have read, understood, and agree to be
@@ -64,7 +64,7 @@ const TermsOfService = () => {
 								2. Description of Services
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
-								EXACT AI provides AI-powered text chat assistants for business
+								NEXT APP provides AI-powered text chat assistants for business
 								communication. Our services include customer support AI, sales
 								AI assistants, and custom AI solutions. We reserve the right to
 								modify, suspend, or discontinue any part of our services at any
@@ -134,7 +134,7 @@ const TermsOfService = () => {
 							<p className="text-gray-300 leading-relaxed">
 								All content, features, and functionality of our services,
 								including but not limited to text, graphics, logos, icons,
-								images, audio clips, and software, are owned by EXACT AI and are
+								images, audio clips, and software, are owned by NEXT APP and are
 								protected by copyright, trademark, and other intellectual
 								property laws.
 							</p>
@@ -145,9 +145,9 @@ const TermsOfService = () => {
 								express written consent.
 							</p>
 							<p className="text-gray-300 leading-relaxed mt-4">
-								The EXACT AI name, logo, and all related names, logos, product
-								and service names, designs, and slogans are trademarks of EXACT
-								AI or its affiliates. You may not use such marks without our
+								The NEXT APP name, logo, and all related names, logos, product
+								and service names, designs, and slogans are trademarks of NEXT APP
+								or its affiliates. You may not use such marks without our
 								prior written permission. All other names, brands, and marks are
 								used for identification purposes only and may be the trademarks
 								of their respective owners.
@@ -166,7 +166,7 @@ const TermsOfService = () => {
 								5. User Content
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
-								By submitting content to our services, you grant EXACT AI a
+								By submitting content to our services, you grant NEXT APP a
 								worldwide, non-exclusive, royalty-free, sublicensable, and
 								transferable license to use, reproduce, distribute, prepare
 								derivative works of, display, and perform the content in
@@ -261,7 +261,7 @@ const TermsOfService = () => {
 								7. Limitation of Liability
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
-								In no event shall EXACT AI, its directors, employees, partners,
+								In no event shall NEXT APP, its directors, employees, partners,
 								agents, suppliers, or affiliates be liable for any indirect,
 								incidental, special, consequential, or punitive damages,
 								including without limitation, loss of profits, data, use,
@@ -269,7 +269,7 @@ const TermsOfService = () => {
 								to or use of or inability to access or use our services.
 							</p>
 							<p className="text-gray-300 leading-relaxed mt-4">
-								To the maximum extent permitted by applicable law, EXACT AI and
+								To the maximum extent permitted by applicable law, NEXT APP and
 								its affiliates, officers, employees, agents, partners, and
 								licensors disclaim all warranties, express or implied, including
 								but not limited to implied warranties of merchantability,
@@ -293,7 +293,7 @@ const TermsOfService = () => {
 								8. Indemnification
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
-								You agree to defend, indemnify, and hold harmless EXACT AI and
+								You agree to defend, indemnify, and hold harmless NEXT APP and
 								its licensees and licensors, and their employees, contractors,
 								agents, officers, and directors, from and against any and all
 								claims, damages, obligations, losses, liabilities, costs, and
@@ -326,7 +326,7 @@ const TermsOfService = () => {
 							</h2>
 							<p className="text-gray-300 leading-relaxed">
 								These Terms shall be governed by and construed in accordance
-								with the laws of the jurisdiction in which EXACT AI is
+								with the laws of the jurisdiction in which NEXT APP is
 								established, without regard to its conflict of law provisions.
 							</p>
 							<p className="text-gray-300 leading-relaxed mt-4">
@@ -353,8 +353,8 @@ const TermsOfService = () => {
 							<p className="text-gray-300 leading-relaxed">
 								In the event of any dispute, claim, or controversy arising out
 								of or relating to these Terms or the breach, termination,
-								enforcement, interpretation, or validity thereof, you and EXACT
-								AI agree to first attempt to resolve the dispute informally by
+								enforcement, interpretation, or validity thereof, you and NEXT APP
+								agree to first attempt to resolve the dispute informally by
 								contacting each other.
 							</p>
 							<p className="text-gray-300 leading-relaxed mt-4">
@@ -375,7 +375,7 @@ const TermsOfService = () => {
 								You agree that any arbitration will be conducted on an
 								individual basis and not as a class, consolidated, or
 								representative action. If for any reason a claim proceeds in
-								court rather than in arbitration, you and EXACT AI waive any
+								court rather than in arbitration, you and NEXT APP waive any
 								right to a jury trial.
 							</p>
 						</section>
@@ -444,11 +444,11 @@ const TermsOfService = () => {
 							<div className="mt-6 space-y-2 text-gray-300">
 								<p>
 									<strong className="text-white">Email:</strong>{' '}
-									hello@exactai.com
+									hello@nextappai.com
 								</p>
 								<p>
-									<strong className="text-white">Postal Address:</strong> EXACT
-									AI Headquarters, 123 Innovation Drive, San Francisco, CA
+									<strong className="text-white">Postal Address:</strong> NEXT APP
+									Headquarters, 123 Innovation Drive, San Francisco, CA
 									94105, USA
 								</p>
 								<p>

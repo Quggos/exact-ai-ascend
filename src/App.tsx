@@ -8,6 +8,8 @@ import Index from '@/pages/Index';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import ContactUs from './pages/ContactUs';
+import BookCall from './pages/BookCall';
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -32,6 +34,8 @@ const App = () => (
 					<Route path="/" element={<Index />} />
 					<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 					<Route path="/terms-of-service" element={<TermsOfService />} />
+					<Route path="/contact-us" element={<ContactUs />} />
+					<Route path="/book-call" element={<BookCall />} />
 					{/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
 					<Route path="*" element={<NotFound />} />
 				</Routes>

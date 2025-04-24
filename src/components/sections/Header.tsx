@@ -93,6 +93,14 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 		? 'lg:bg-black lg:backdrop-blur-none lg:transition-all lg:duration-300 bg-black backdrop-blur-xl'
 		: 'bg-transparent transition-all duration-300';
 
+	const navigation = [
+		{ name: 'Home', href: '/' },
+		{ name: 'Features', href: '/#features' },
+		{ name: 'Pricing', href: '/#pricing' },
+		{ name: 'Contact', href: '/contact-us' },
+		{ name: 'Book Call', href: '/book-call' },
+	];
+
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50">
 			<div className={headerBgClasses}>
