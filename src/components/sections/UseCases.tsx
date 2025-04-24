@@ -11,11 +11,7 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 			<div className="lg:container md:container mx-auto">
 				<div className="text-center max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
 					<h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						Where{' '}
-						<span className="bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-transparent bg-clip-text">
-							VoiceBot
-						</span>{' '}
-						Works Best
+						Where VoiceBot Works Best
 					</h2>
 					<p className="text-black/60 leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-3xl">
 						Smart automation for the tasks that drain your time — from handling

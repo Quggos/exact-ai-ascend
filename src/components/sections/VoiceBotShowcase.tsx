@@ -263,13 +263,13 @@ export const VoiceBotShowcase = () => {
         </div>
 
         {/* Industry tabs */}
-        <div className="flex items-center justify-start md:justify-center overflow-x-auto pb-4 mb-14 scrollbar-hide">
-          <div className="flex space-x-3 px-4">
+        <div className="flex items-center justify-center overflow-x-auto pb-4 mb-14 scrollbar-hide">
+          <div className="flex flex-wrap justify-center gap-2 px-4 max-w-6xl mx-auto">
             {industries.map((industry) => (
               <button
                 key={industry.id}
                 onClick={() => setActiveIndustry(industry.id)}
-                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeIndustry === industry.id
                     ? 'bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-white shadow-lg shadow-[#EB2525]/20'
                     : 'border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20'
@@ -282,11 +282,11 @@ export const VoiceBotShowcase = () => {
         </div>
 
         {/* Two column layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 lg:gap-16 items-center">
           {/* Left column - Benefits */}
           <div className="p-8 transition-all">
-            <div className="flex items-center mb-16">
-              <h3 className="text-6xl text-gradient tracking-[-0.02em] font-display font-medium py-1">Key benefits</h3>
+            <div className="flex items-center mb-4 sm:mb-16">
+              <h3 className="text-3xl sm:text-6xl lg:text-6xl text-gradient tracking-[-0.02em] font-display font-medium py-1">Key benefits</h3>
             </div>
             
             <ul className="text-lg space-y-2">
@@ -304,7 +304,7 @@ export const VoiceBotShowcase = () => {
 
           {/* Right column - Voice samples */}
           <div className="flex flex-col justify-center">
-            <div className="flex items-center mb-6">
+            <div className="flex items-center justify-center md:justify-start mb-6">
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#FFA4A4]/20 to-[#EB2525]/20 backdrop-blur-sm mr-4 border border-white/10">
                 <Headphones className="w-6 h-6 text-white/90" />
               </div>
