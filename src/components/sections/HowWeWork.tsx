@@ -3,7 +3,7 @@ export const HowWeWork = () => {
 		<section id="how-we-work" className="bg-black px-4 sm:px-6 py-16 sm:py-24">
 			<div className="lg:container md:container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 md:mb-24">
-					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-white leading-tight sm:leading-tight px-2 mb-4 sm:mb-6 md:mb-8">
+					<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-[-0.02em] text-gradient pb-1 leading-tight sm:leading-tight px-2 mb-4 sm:mb-6 md:mb-8">
 						Never Miss a{' '}
 						<span
 							style={{
@@ -18,7 +18,7 @@ export const HowWeWork = () => {
 						</span>{' '}
 						Again
 					</h2>
-					<p className="text-white max-w-6xl mx-auto font-medium leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-2xl">
+					<p className="text-white/80 max-w-6xl mx-auto leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-3xl">
 						No voicemails. No dropped calls. No missed opportunities. Every
 						caller gets an immediate response, even outside working hours —
 						turning lost chances into captured leads.

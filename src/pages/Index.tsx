@@ -37,7 +37,6 @@ const Index = () => {
 				<Features />
 				<HowItWorks scrollToSection={scrollToSection} />
 				<VoiceBotShowcase />
-				<LiveDemo scrollToSection={scrollToSection} />
 				<Support />
 			</main>
 
