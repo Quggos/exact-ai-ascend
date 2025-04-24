@@ -7,8 +7,8 @@ import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Features } from '@/components/sections/Features';
 import { Support } from '@/components/sections/Support';
 import { IntegrationProcess } from '@/components/sections/IntegrationProcess';
-import { VoiceBotShowcase } from '@/components/sections/VoiceBotShowcase';
-import ProvenResults from '@/components/sections/ProvenResults';
+import { Showcase } from '@/components/sections/Showcase';
+import ProvenResults from '@/components/sections/Results';
 
 const Index = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -32,13 +32,27 @@ const Index = () => {
 
 			<main>
 				<Hero scrollToSection={scrollToSection} />
-				<UseCases scrollToSection={scrollToSection} />
-				<HowItWorks />
-				<VoiceBotShowcase />
-				<Features />
-				<Support />
-				<ProvenResults />
-				<IntegrationProcess scrollToSection={scrollToSection} />
+				<div id="use-cases">
+					<UseCases scrollToSection={scrollToSection} />
+				</div>
+				<div id="how-we-work">
+					<HowItWorks />
+				</div>
+				<div id="showcase">
+					<Showcase />
+				</div>
+				<div id="features">
+					<Features />
+				</div>
+				<div id="support">
+					<Support />
+				</div>
+				<div id="results">
+					<ProvenResults />
+				</div>
+				<div id="integration">
+					<IntegrationProcess scrollToSection={scrollToSection} />
+				</div>
 			</main>
 			<Footer />
 		</div>

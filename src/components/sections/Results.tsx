@@ -7,7 +7,13 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from '@/components/ui/carousel';
-import { ChevronLeft, ChevronRight, TrendingUp, Users, Clock } from 'lucide-react';
+import {
+	ChevronLeft,
+	ChevronRight,
+	TrendingUp,
+	Users,
+	Clock,
+} from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface IndustryCase {
@@ -28,9 +34,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			"Our post-session follow-up used to be inconsistent and time-consuming. With the AI VoiceBot, every client now receives personalized album suggestions and upsell options automatically. It's like having a post-shoot salesperson working 24/7.",
 		metrics: [
-			{ label: 'Upsell Conversions', value: '+45%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Customer Retention', value: '+38%', icon: <Users className="w-5 h-5" /> },
-			{ label: 'Time Freed / Day', value: '+2 hrs', icon: <Clock className="w-5 h-5" /> },
+			{
+				label: 'Upsell Conversions',
+				value: '+45%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Customer Retention',
+				value: '+38%',
+				icon: <Users className="w-5 h-5" />,
+			},
+			{
+				label: 'Time Freed / Day',
+				value: '+2 hrs',
+				icon: <Clock className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -39,9 +57,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			'This bot became our project manager. It follows up with timelines, prep checklists, and even recommends add-ons our team used to forget. Clients love the clarity — we love the extra revenue.',
 		metrics: [
-			{ label: 'Upsell Rate', value: '+51%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Fewer Client Complaints', value: '–33%', icon: <Users className="w-5 h-5" /> },
-			{ label: 'Time Saved Per Project', value: '4 hrs', icon: <Clock className="w-5 h-5" /> },
+			{
+				label: 'Upsell Rate',
+				value: '+51%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Fewer Client Complaints',
+				value: '–33%',
+				icon: <Users className="w-5 h-5" />,
+			},
+			{
+				label: 'Time Saved Per Project',
+				value: '4 hrs',
+				icon: <Clock className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -50,9 +80,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			"Our recurring bookings jumped the moment we deployed the bot. It reminds customers about their next appointment and even recommends extra services. It's subtle, but powerful.",
 		metrics: [
-			{ label: 'Repeat Bookings', value: '+57%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Monthly Revenue Growth', value: '+32%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Churn Rate Reduction', value: '–41%', icon: <Users className="w-5 h-5" /> },
+			{
+				label: 'Repeat Bookings',
+				value: '+57%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Monthly Revenue Growth',
+				value: '+32%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Churn Rate Reduction',
+				value: '–41%',
+				icon: <Users className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -61,10 +103,26 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			"Our clients come from all over the world, and the VoiceBot speaks to them in their own language. It automatically sends relevant tips, insurance offers, and travel extras — all in the right tone. It's like having a multilingual travel assistant handling every lead.",
 		metrics: [
-			{ label: 'Package Value Growth', value: '+39%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Lead-to-Booking Rate', value: '+26%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Staff Time Freed', value: '+3.5 hrs/day', icon: <Clock className="w-5 h-5" /> },
-			{ label: 'Multilingual Support', value: '35+ languages', icon: <Users className="w-5 h-5" /> },
+			{
+				label: 'Package Value Growth',
+				value: '+39%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Lead-to-Booking Rate',
+				value: '+26%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Staff Time Freed',
+				value: '+3.5 hrs/day',
+				icon: <Clock className="w-5 h-5" />,
+			},
+			{
+				label: 'Multilingual Support',
+				value: '35+ languages',
+				icon: <Users className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -73,9 +131,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			"Our customers are coming back more regularly. The AI reminds them when service is due and makes helpful recommendations. It's made us look 10× more professional.",
 		metrics: [
-			{ label: 'Repeat Visits', value: '+48%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Revenue Per Client', value: '+21%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Missed Appointments', value: '–37%', icon: <Clock className="w-5 h-5" /> },
+			{
+				label: 'Repeat Visits',
+				value: '+48%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Revenue Per Client',
+				value: '+21%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Missed Appointments',
+				value: '–37%',
+				icon: <Clock className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -84,9 +154,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			"We're swamped during peak season. The bot handles planning reminders and even vendor upsell prompts. Clients feel taken care of, and we close more premium packages.",
 		metrics: [
-			{ label: 'Time Saved Per Client', value: '6 hrs', icon: <Clock className="w-5 h-5" /> },
-			{ label: 'Upsell Conversion Rate', value: '+34%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Client Satisfaction', value: '+29%', icon: <Users className="w-5 h-5" /> },
+			{
+				label: 'Time Saved Per Client',
+				value: '6 hrs',
+				icon: <Clock className="w-5 h-5" />,
+			},
+			{
+				label: 'Upsell Conversion Rate',
+				value: '+34%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Client Satisfaction',
+				value: '+29%',
+				icon: <Users className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -95,9 +177,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			"Leads go cold fast in this industry. The VoiceBot follows up with value — neighborhood tips, tour offers, and similar listings. We've reactivated so many cold leads this way.",
 		metrics: [
-			{ label: 'Lead Engagement Rate', value: '+61%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Client Follow-Up Time', value: '–50%', icon: <Clock className="w-5 h-5" /> },
-			{ label: 'Closed Deals', value: '+33%', icon: <TrendingUp className="w-5 h-5" /> },
+			{
+				label: 'Lead Engagement Rate',
+				value: '+61%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Client Follow-Up Time',
+				value: '–50%',
+				icon: <Clock className="w-5 h-5" />,
+			},
+			{
+				label: 'Closed Deals',
+				value: '+33%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -106,9 +200,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			'Clients no longer forget appointments, and we upsell skincare and follow-ups without lifting a finger. The VoiceBot is like an automated assistant — but better.',
 		metrics: [
-			{ label: 'No-Show Reduction', value: '–47%', icon: <Users className="w-5 h-5" /> },
-			{ label: 'Services Per Client', value: '+36%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Retention Rate', value: '+42%', icon: <Users className="w-5 h-5" /> },
+			{
+				label: 'No-Show Reduction',
+				value: '–47%',
+				icon: <Users className="w-5 h-5" />,
+			},
+			{
+				label: 'Services Per Client',
+				value: '+36%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Retention Rate',
+				value: '+42%',
+				icon: <Users className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -117,9 +223,21 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			'Our onboarding used to kill momentum. Now clients feel supported from day one. The bot provides updates and nudges them toward high-value services automatically.',
 		metrics: [
-			{ label: 'Onboarding Completion Rate', value: '+58%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Retainer Upsells', value: '+46%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Project Cycle Time', value: '–3 days', icon: <Clock className="w-5 h-5" /> },
+			{
+				label: 'Onboarding Completion Rate',
+				value: '+58%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Retainer Upsells',
+				value: '+46%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Project Cycle Time',
+				value: '–3 days',
+				icon: <Clock className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -128,10 +246,26 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			'We were looking for a way to build relationships with our readers beyond the purchase. With this AI VoiceBot, we now deliver reading reminders, personalized summaries, and cross-sell recommendations without lifting a finger.',
 		metrics: [
-			{ label: 'Repeat Purchases', value: '+32%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Customer Lifetime Value', value: '+41%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Upsell Conversion Rate', value: '+27%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Time Saved Weekly', value: '6 hrs', icon: <Clock className="w-5 h-5" /> },
+			{
+				label: 'Repeat Purchases',
+				value: '+32%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Customer Lifetime Value',
+				value: '+41%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Upsell Conversion Rate',
+				value: '+27%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Time Saved Weekly',
+				value: '6 hrs',
+				icon: <Clock className="w-5 h-5" />,
+			},
 		],
 	},
 	{
@@ -140,20 +274,42 @@ const originalIndustryCases: IndustryCase[] = [
 		testimonial:
 			'This tool became our assistant overnight. It reminds pet owners about care tips after each appointment, offers suggestions for treats and training sessions, and builds trust without us needing to call.',
 		metrics: [
-			{ label: 'Return Appointments', value: '+38%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Add-On Sales', value: '+29%', icon: <TrendingUp className="w-5 h-5" /> },
-			{ label: 'Client Retention', value: '+34%', icon: <Users className="w-5 h-5" /> },
-			{ label: 'Support Time Cut', value: '-45%', icon: <Clock className="w-5 h-5" /> },
+			{
+				label: 'Return Appointments',
+				value: '+38%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Add-On Sales',
+				value: '+29%',
+				icon: <TrendingUp className="w-5 h-5" />,
+			},
+			{
+				label: 'Client Retention',
+				value: '+34%',
+				icon: <Users className="w-5 h-5" />,
+			},
+			{
+				label: 'Support Time Cut',
+				value: '-45%',
+				icon: <Clock className="w-5 h-5" />,
+			},
 		],
 	},
 ];
 
-const industryCases = originalIndustryCases.map(industry => ({
+const industryCases = originalIndustryCases.map((industry) => ({
 	...industry,
-	metrics: industry.metrics.slice(0, 3)
+	metrics: industry.metrics.slice(0, 3),
 }));
 
-const MetricCard = ({ metric, className = '' }: { metric: IndustryCase['metrics'][0], className?: string }) => (
+const MetricCard = ({
+	metric,
+	className = '',
+}: {
+	metric: IndustryCase['metrics'][0];
+	className?: string;
+}) => (
 	<div className={`relative group ${className}`}>
 		<div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200/50 hover:border-[#EB2525]/30 transition-all duration-300 h-full flex flex-col">
 			<div className="flex items-center gap-3 mb-2">
@@ -171,18 +327,17 @@ const MetricCard = ({ metric, className = '' }: { metric: IndustryCase['metrics'
 	</div>
 );
 
-export default function ProvenResults() {
+export default function Results() {
 	return (
 		<section className="w-full py-24 relative bg-[#fafafa] overflow-hidden">
 			{/* Background Elements Removed */}
 
 			<div className="container max-w-7xl relative z-10 px-4 sm:px-6 lg:px-8">
 				<div className="flex flex-col items-center mb-16 text-center">
-					
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-black tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-							Proven Results Across Industries
+						Proven Results Across Industries
 					</h2>
-					
+
 					<p className="text-black/80 font-regular leading-relaxed tracking-[-0.02em] text-lg sm:text-xl md:text-3xl max-w-4xl mx-auto">
 						Smart businesses are already integrating AI into their operations —
 						not to catch up, but to lead. This is where the future of customer
@@ -238,10 +393,7 @@ export default function ProvenResults() {
 
 												<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6">
 													{industry.metrics.map((metric, idx) => (
-														<MetricCard 
-															key={idx} 
-															metric={metric} 
-														/>
+														<MetricCard key={idx} metric={metric} />
 													))}
 												</div>
 											</CardContent>

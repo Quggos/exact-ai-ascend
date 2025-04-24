@@ -121,16 +121,34 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 									How We Work
 								</button>
 								<button
+									onClick={() => scrollToSection('showcase')}
+									className="text-md font-medium hover:text-primary transition-colors"
+								>
+									Showcase
+								</button>
+								<button
 									onClick={() => scrollToSection('features')}
 									className="text-md font-medium hover:text-primary transition-colors"
 								>
 									Features
 								</button>
 								<button
-									onClick={() => scrollToSection('demo')}
+									onClick={() => scrollToSection('support')}
 									className="text-md font-medium hover:text-primary transition-colors"
 								>
-									Live Demo
+									Support
+								</button>
+								<button
+									onClick={() => scrollToSection('results')}
+									className="text-md font-medium hover:text-primary transition-colors"
+								>
+									Results
+								</button>
+								<button
+									onClick={() => scrollToSection('integration')}
+									className="text-md font-medium hover:text-primary transition-colors"
+								>
+									Integration
 								</button>
 							</nav>
 						</div>
@@ -185,7 +203,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 							<div className="hidden sm:block">
 								<ButtonHoverEffect>
 									<button
-										onClick={() => scrollToSection('demo')}
+										onClick={() => scrollToSection('integration')}
 										className="px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
 										style={{
 											backgroundImage:
@@ -215,7 +233,13 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 			{/* Mobile menu - always render but conditionally show/hide with animation */}
 			<div ref={menuRef} className={menuClasses}>
 				<div className="container mx-auto px-4 py-4">
-					<nav className="flex flex-col space-y-4 justify-center items-start">
+					<nav className="flex flex-col space-y-2 justify-center items-start">
+						<button
+							onClick={() => handleNavClick('hero')}
+							className="text-md font-medium py-2 hover:text-primary transition-colors"
+						>
+							Home
+						</button>
 						<button
 							onClick={() => handleNavClick('use-cases')}
 							className="text-md font-medium py-2 hover:text-primary transition-colors"
@@ -229,16 +253,34 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 							How We Work
 						</button>
 						<button
+							onClick={() => handleNavClick('showcase')}
+							className="text-md font-medium py-2 hover:text-primary transition-colors"
+						>
+							Showcase
+						</button>
+						<button
 							onClick={() => handleNavClick('features')}
 							className="text-md font-medium py-2 hover:text-primary transition-colors"
 						>
 							Features
 						</button>
 						<button
-							onClick={() => handleNavClick('demo')}
+							onClick={() => handleNavClick('support')}
 							className="text-md font-medium py-2 hover:text-primary transition-colors"
 						>
-							Live Demo
+							Support
+						</button>
+						<button
+							onClick={() => handleNavClick('results')}
+							className="text-md font-medium py-2 hover:text-primary transition-colors"
+						>
+							Results
+						</button>
+						<button
+							onClick={() => handleNavClick('integration')}
+							className="text-md font-medium py-2 hover:text-primary transition-colors"
+						>
+							Integration
 						</button>
 
 						<div className="flex items-center gap-4 py-2">
@@ -289,7 +331,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 						<div className="pt-2">
 							<ButtonHoverEffect className="w-full">
 								<button
-									onClick={() => handleNavClick('demo')}
+									onClick={() => handleNavClick('integration')}
 									className=" px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
 									style={{
 										backgroundImage:
