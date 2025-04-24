@@ -63,12 +63,12 @@ export const Support = () => {
 			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#EB2525]/10 via-transparent to-transparent" />
 
 			<div className="lg:container md:container mx-auto relative z-10">
-				<div className="text-center max-w-3xl mx-auto mb-24">
+				<div className="text-center max-w-6xl mx-auto mb-24">
 					<p className="text-white/60 text-3xl tracking-[-0.02em] font-medium mb-3">
 						Support & Maintenance
 					</p>
 					<h2 className="text-7xl font-semibold text-gradient tracking-[-0.02em] mb-8">
-						Comprehensive Care for Your AI
+						Not Just a VoiceBot — A Long-Term Growth Partner
 					</h2>
 					<p className="text-white/60 font-regular leading-12 tracking-[-0.02em] text-3xl">
 						Our dedicated support team ensures your AI system runs smoothly and

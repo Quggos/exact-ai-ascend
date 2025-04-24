@@ -57,33 +57,55 @@ const industries = [
   }
 ];
 
-// Sample voice data
+// Sample voice data with specific MP3 files for each industry and language
 const voiceSamples = [
   {
     id: 'en',
     language: 'English',
     flag: '🇺🇸',
     transcript: 'Hello, I can help you schedule an appointment with our clinic.',
-    waveform: [10, 25, 18, 32, 40, 30, 20, 35, 42, 28, 15, 22, 30, 38, 25, 15, 28, 35, 20, 10]
+    waveform: [10, 25, 18, 32, 40, 30, 20, 35, 42, 28, 15, 22, 30, 38, 25, 15, 28, 35, 20, 10],
+    audioFiles: {
+      ecommerce: '/audio/ecommerce/en.mp3',
+      healthcare: '/audio/healthcare/en.mp3',
+      banking: '/audio/banking/en.mp3',
+      logistics: '/audio/logistics/en.mp3',
+      realestate: '/audio/realestate/en.mp3'
+    }
   },
   {
     id: 'es',
     language: 'Spanish',
     flag: '🇪🇸',
     transcript: 'Hola, puedo ayudarle a programar una cita con nuestra clínica.',
-    waveform: [8, 20, 35, 24, 42, 28, 18, 30, 38, 20, 10, 28, 35, 15, 25, 40, 22, 30, 18, 12]
+    waveform: [8, 20, 35, 24, 42, 28, 18, 30, 38, 20, 10, 28, 35, 15, 25, 40, 22, 30, 18, 12],
+    audioFiles: {
+      ecommerce: '/audio/ecommerce/es.mp3',
+      healthcare: '/audio/healthcare/es.mp3',
+      banking: '/audio/banking/es.mp3',
+      logistics: '/audio/logistics/es.mp3',
+      realestate: '/audio/realestate/es.mp3'
+    }
   },
   {
     id: 'fr',
     language: 'French',
     flag: '🇫🇷',
     transcript: 'Bonjour, je peux vous aider à prendre rendez-vous dans notre clinique.',
-    waveform: [15, 30, 20, 38, 25, 18, 32, 40, 22, 28, 35, 15, 25, 30, 18, 42, 30, 20, 28, 10]
+    waveform: [15, 30, 20, 38, 25, 18, 32, 40, 22, 28, 35, 15, 25, 30, 18, 42, 30, 20, 28, 10],
+    audioFiles: {
+      ecommerce: '/audio/ecommerce/fr.mp3',
+      healthcare: '/audio/healthcare/fr.mp3',
+      banking: '/audio/banking/fr.mp3',
+      logistics: '/audio/logistics/fr.mp3',
+      realestate: '/audio/realestate/realestate/fr.mp3'
+    }
   }
 ];
 
 interface AudioSampleProps {
   sample: typeof voiceSamples[0];
+  currentIndustry: string;
 }
 
 const WaveformAnimation = ({ isPlaying, waveform }: { isPlaying: boolean, waveform: number[] }) => (
@@ -108,37 +130,56 @@ const WaveformAnimation = ({ isPlaying, waveform }: { isPlaying: boolean, wavefo
   </div>
 );
 
-const AudioSample = ({ sample }: AudioSampleProps) => {
+const AudioSample = ({ sample, currentIndustry }: AudioSampleProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const intervalRef = useRef<number | null>(null);
 
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
-
   useEffect(() => {
-    if (isPlaying) {
-      let currentProgress = 0;
-      intervalRef.current = window.setInterval(() => {
-        currentProgress += 1;
-        setProgress(currentProgress);
-        if (currentProgress >= 30) {
-          clearInterval(intervalRef.current!);
-          setIsPlaying(false);
-          setProgress(0);
-        }
-      }, 1000);
-    } else if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-    }
+    // Create audio element
+    audioRef.current = new Audio(sample.audioFiles[currentIndustry as keyof typeof sample.audioFiles]);
+    
+    // Set up audio event listeners
+    audioRef.current.addEventListener('loadedmetadata', () => {
+      setDuration(audioRef.current?.duration || 0);
+    });
+
+    audioRef.current.addEventListener('ended', () => {
+      setIsPlaying(false);
+      setProgress(0);
+    });
 
     return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
     };
-  }, [isPlaying]);
+  }, [sample, currentIndustry]);
+
+  const togglePlay = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    } else {
+      audioRef.current.play();
+      intervalRef.current = window.setInterval(() => {
+        if (audioRef.current) {
+          setProgress(audioRef.current.currentTime);
+        }
+      }, 100);
+    }
+    setIsPlaying(!isPlaying);
+  };
 
   return (
     <div className="p-5 bg-gradient-to-br from-black/40 to-black/20 backdrop-blur-lg rounded-xl mb-4 border border-white/10 hover:border-white/20 transition-all shadow-lg hover:shadow-xl">
@@ -168,12 +209,12 @@ const AudioSample = ({ sample }: AudioSampleProps) => {
         <div className="h-1.5 bg-white/10 rounded-full flex-1 overflow-hidden backdrop-blur-sm">
           <div 
             className="h-full bg-gradient-to-r from-[#FFA57A] to-[#FC576E] rounded-full transition-all duration-300"
-            style={{ width: `${(progress / 30) * 100}%` }}
+            style={{ width: `${(progress / duration) * 100}%` }}
           />
         </div>
         
         <span className="text-xs text-muted-foreground ml-3 font-mono">
-          {progress < 10 ? '0:0' : '0:'}{progress}
+          {Math.floor(progress / 60)}:{(Math.floor(progress) % 60).toString().padStart(2, '0')}
         </span>
         
         <div className="ml-3 cursor-pointer text-white/70 hover:text-white transition-colors">
@@ -191,10 +232,10 @@ const IndustryIcon = ({ icon }: { icon: React.ReactNode }) => (
 );
 
 export const VoiceBotShowcase = () => {
-  const [activeIndustry, setActiveIndustry] = useState('healthcare');
+  const [activeIndustry, setActiveIndustry] = useState('ecommerce');
   
   // Get the current industry data
-  const currentIndustry = industries.find(ind => ind.id === activeIndustry) || industries[1];
+  const currentIndustry = industries.find(ind => ind.id === activeIndustry) || industries[0];
 
   return (
     <section className="py-24 overflow-hidden relative" id="voice-bot">
@@ -287,7 +328,7 @@ export const VoiceBotShowcase = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.2, delay: index * 0.05 }}
                     >
-                      <AudioSample sample={sample} />
+                      <AudioSample sample={sample} currentIndustry={activeIndustry} />
                     </motion.div>
                   ))}
                 </motion.div>
