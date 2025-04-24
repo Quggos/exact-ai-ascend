@@ -19,13 +19,10 @@ export const HowItWorks = ({ scrollToSection }: HowItWorksProps) => {
 		>
 			<div className="lg:container md:container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 lg:mb-20">
-					<p className="text-white/70 text-base sm:text-lg md:text-xl font-medium mb-2 sm:mb-3">
-						How it works
-					</p>
-					<h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 sm:mb-8">
+					<h2 className="text-4xl sm:text-5xl md:text-6xl pb-1 lg:text-7xl font-semibold text-gradient mb-6 sm:mb-8">
 						What AI integration process looks like?
 					</h2>
-					<p className="text-white/70 max-w-3xl mx-auto font-medium text-base sm:text-lg md:text-xl">
+					<p className="text-white/70 max-w-3xl mx-auto text-base sm:text-lg md:text-3xl">
 						Schedule a consultation with our AI specialists to discuss your
 						specific needs and discover how EXACT AI can elevate your customer
 						interactions.
