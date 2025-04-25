@@ -15,9 +15,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 	const menuRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		setIsMainPage(
-			window.location.pathname === '/' || window.location.pathname === '/alt'
-		);
+		setIsMainPage(window.location.pathname === '/chat-bot');
 	}, []);
 
 	const scrollToTop = () => {
@@ -138,10 +136,10 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 									How We Work
 								</button>
 								<button
-									onClick={() => scrollToSection('showcase')}
+									onClick={() => scrollToSection('live-demo')}
 									className="text-md font-medium hover:text-primary transition-colors"
 								>
-									Showcase
+									Live Demo
 								</button>
 								<button
 									onClick={() => scrollToSection('features')}

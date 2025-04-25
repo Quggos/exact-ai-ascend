@@ -15,9 +15,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 	const menuRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		setIsMainPage(
-			window.location.pathname === '/' || window.location.pathname === '/alt'
-		);
+		setIsMainPage(window.location.pathname === '/');
 	}, []);
 
 	const toggleMobileMenu = () => {

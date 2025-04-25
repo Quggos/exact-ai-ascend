@@ -1,16 +1,16 @@
 import { useRef, useState, useEffect } from 'react';
-import { Header } from '@/components/alt-sections/Header';
-import { Hero } from '@/components/alt-sections/Hero';
-import { Footer } from '@/components/alt-sections/Footer';
-import { UseCases } from '@/components/alt-sections/UseCases';
-import { HowItWorks } from '@/components/alt-sections/HowItWorks';
-import { Features } from '@/components/alt-sections/Features';
-import { Support } from '@/components/alt-sections/Support';
-import { IntegrationProcess } from '@/components/alt-sections/IntegrationProcess';
-import { Showcase } from '@/components/alt-sections/Showcase';
-import ProvenResults from '@/components/alt-sections/Results';
+import { Header } from '@/components/chat-bot-sections/Header';
+import { Hero } from '@/components/chat-bot-sections/Hero';
+import { Footer } from '@/components/chat-bot-sections/Footer';
+import { UseCases } from '@/components/chat-bot-sections/UseCases';
+import { HowItWorks } from '@/components/chat-bot-sections/HowItWorks';
+import { Features } from '@/components/chat-bot-sections/Features';
+import { Support } from '@/components/chat-bot-sections/Support';
+import { IntegrationProcess } from '@/components/chat-bot-sections/IntegrationProcess';
+import ProvenResults from '@/components/chat-bot-sections/Results';
+import { LiveDemo } from '@/components/chat-bot-sections/LiveDemo';
 
-const AltPage = () => {
+export const ChatBotPage = () => {
 	const [isSticky, setIsSticky] = useState(false);
 	const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -37,8 +37,8 @@ const AltPage = () => {
 				<div id="how-we-work">
 					<HowItWorks />
 				</div>
-				<div id="showcase">
-					<Showcase />
+				<div id="live-demo">
+					<LiveDemo scrollToSection={scrollToSection} />
 				</div>
 				<div id="features">
 					<Features />
@@ -57,5 +57,3 @@ const AltPage = () => {
 		</div>
 	);
 };
-
-export default AltPage;

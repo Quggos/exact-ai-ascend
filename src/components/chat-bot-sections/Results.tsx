@@ -14,7 +14,6 @@ import {
 	Users,
 	Clock,
 } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 interface IndustryCase {
 	id: number;
@@ -32,10 +31,10 @@ const originalIndustryCases: IndustryCase[] = [
 		id: 1,
 		title: 'Photography Studios',
 		testimonial:
-			"Our post-session follow-up used to be inconsistent and time-consuming. With the AI VoiceBot, every client now receives personalized album suggestions and upsell options automatically. It's like having a post-shoot salesperson working 24/7.",
+			"Before the chatbot, we struggled with missed client messages and late replies. Now every inquiry gets an instant answer, and we've automated things like session prep, FAQs, and even reprint requests. It's become our silent front desk.",
 		metrics: [
 			{
-				label: 'Upsell Conversions',
+				label: 'Lead-to-booking conversion',
 				value: '+45%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
@@ -45,7 +44,7 @@ const originalIndustryCases: IndustryCase[] = [
 				icon: <Users className="w-5 h-5" />,
 			},
 			{
-				label: 'Time Freed / Day',
+				label: 'hrs Staff time freed per day',
 				value: '+2 hrs',
 				icon: <Clock className="w-5 h-5" />,
 			},
@@ -55,21 +54,21 @@ const originalIndustryCases: IndustryCase[] = [
 		id: 2,
 		title: 'Home Renovation / Interior Design',
 		testimonial:
-			'This bot became our project manager. It follows up with timelines, prep checklists, and even recommends add-ons our team used to forget. Clients love the clarity — we love the extra revenue.',
+			"Clients used to wait hours for project timelines or basic updates. The chatbot handles those instantly — plus it suggests add-ons like smart lighting or extra rooms, which we didn't even push before. It's increased our upsell revenue noticeably.",
 		metrics: [
 			{
-				label: 'Upsell Rate',
-				value: '+51%',
+				label: 'Add-on sales',
+				value: '+52%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Fewer Client Complaints',
-				value: '–33%',
-				icon: <Users className="w-5 h-5" />,
+				label: 'Faster first response time',
+				value: '+35%',
+				icon: <Clock className="w-5 h-5" />,
 			},
 			{
-				label: 'Time Saved Per Project',
-				value: '4 hrs',
+				label: 'hrs saved per project manager',
+				value: '+3.2 hrs',
 				icon: <Clock className="w-5 h-5" />,
 			},
 		],
@@ -78,49 +77,44 @@ const originalIndustryCases: IndustryCase[] = [
 		id: 3,
 		title: 'Home Cleaning / Maintenance',
 		testimonial:
-			"Our recurring bookings jumped the moment we deployed the bot. It reminds customers about their next appointment and even recommends extra services. It's subtle, but powerful.",
+			'We used to lose repeat customers because no one followed up. Now the chatbot does it for us — reminders, upsells, even feedback requests. Our team focuses more on service, while the bot keeps customers coming back.',
 		metrics: [
 			{
-				label: 'Repeat Bookings',
-				value: '+57%',
+				label: 'Repeat bookings',
+				value: '+40%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Monthly Revenue Growth',
-				value: '+32%',
+				label: 'New reviews collected',
+				value: '+25%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Churn Rate Reduction',
-				value: '–41%',
-				icon: <Users className="w-5 h-5" />,
+				label: 'hrs saved per agent',
+				value: '+1.5 hrs',
+				icon: <Clock className="w-5 h-5" />,
 			},
 		],
 	},
 	{
 		id: 4,
-		title: 'Travel Agencies / Tour Sellers',
+		title: 'Travel Agencies / Tour Packages',
 		testimonial:
-			"Our clients come from all over the world, and the VoiceBot speaks to them in their own language. It automatically sends relevant tips, insurance offers, and travel extras — all in the right tone. It's like having a multilingual travel assistant handling every lead.",
+			'The chatbot transformed how we handle inquiries. It shares trip info, upsells insurance, and handles multiple languages — all without human help. It feels like we hired a new multilingual team member.',
 		metrics: [
 			{
-				label: 'Package Value Growth',
-				value: '+39%',
+				label: 'Package upgrades',
+				value: '+34%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Lead-to-Booking Rate',
-				value: '+26%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Staff Time Freed',
-				value: '+3.5 hrs/day',
+				label: 'Faster average response',
+				value: '+61%',
 				icon: <Clock className="w-5 h-5" />,
 			},
 			{
-				label: 'Multilingual Support',
-				value: '35+ languages',
+				label: 'Languages supported',
+				value: '100+',
 				icon: <Users className="w-5 h-5" />,
 			},
 		],
@@ -129,45 +123,45 @@ const originalIndustryCases: IndustryCase[] = [
 		id: 5,
 		title: 'Auto Repair Shops',
 		testimonial:
-			"Our customers are coming back more regularly. The AI reminds them when service is due and makes helpful recommendations. It's made us look 10× more professional.",
+			'Our clients love that they can ask the bot about oil change schedules, get reminders, and even book slots instantly. What surprised us? Fewer no-shows, because the bot follows up automatically.',
 		metrics: [
 			{
-				label: 'Repeat Visits',
-				value: '+48%',
+				label: 'Missed appointments',
+				value: '-28%',
+				icon: <Clock className="w-5 h-5" />,
+			},
+			{
+				label: 'Booking completion rate',
+				value: '+46%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Revenue Per Client',
-				value: '+21%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Missed Appointments',
-				value: '–37%',
+				label: 'hrs daily saved for staff',
+				value: '+1.8 hrs',
 				icon: <Clock className="w-5 h-5" />,
 			},
 		],
 	},
 	{
 		id: 6,
-		title: 'Wedding Planners / Event Coordinators',
+		title: 'Wedding Planners & Event Services',
 		testimonial:
-			"We're swamped during peak season. The bot handles planning reminders and even vendor upsell prompts. Clients feel taken care of, and we close more premium packages.",
+			"The chatbot handles a ton of client back-and-forth: vendor lists, schedules, reminders. Our clients feel looked after, and we stay organized. It's like having a polite assistant working all night.",
 		metrics: [
 			{
-				label: 'Time Saved Per Client',
-				value: '6 hrs',
-				icon: <Clock className="w-5 h-5" />,
-			},
-			{
-				label: 'Upsell Conversion Rate',
-				value: '+34%',
+				label: 'Planning efficiency',
+				value: '+36%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Client Satisfaction',
-				value: '+29%',
+				label: 'Client satisfaction score',
+				value: '+31%',
 				icon: <Users className="w-5 h-5" />,
+			},
+			{
+				label: 'admin time saved',
+				value: '+2.2 hrs',
+				icon: <Clock className="w-5 h-5" />,
 			},
 		],
 	},
@@ -175,123 +169,67 @@ const originalIndustryCases: IndustryCase[] = [
 		id: 7,
 		title: 'Real Estate Agents',
 		testimonial:
-			"Leads go cold fast in this industry. The VoiceBot follows up with value — neighborhood tips, tour offers, and similar listings. We've reactivated so many cold leads this way.",
+			'It chats with prospects, answers property questions, and collects lead details 24/7 — without us lifting a finger. Follow-ups are automated, and the CRM gets all the info instantly.',
 		metrics: [
 			{
-				label: 'Lead Engagement Rate',
-				value: '+61%',
+				label: 'Lead capture rate',
+				value: '+48%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Client Follow-Up Time',
-				value: '–50%',
+				label: 'Response speed',
+				value: '+42%',
 				icon: <Clock className="w-5 h-5" />,
 			},
 			{
-				label: 'Closed Deals',
-				value: '+33%',
-				icon: <TrendingUp className="w-5 h-5" />,
+				label: 'hrs saved per agent',
+				value: '+3.5 hrs',
+				icon: <Clock className="w-5 h-5" />,
 			},
 		],
 	},
 	{
 		id: 8,
-		title: 'Appointment-Based (Beauty, Clinics, Dentists)',
+		title: 'Beauty Clinics / Dentists / Salons',
 		testimonial:
-			'Clients no longer forget appointments, and we upsell skincare and follow-ups without lifting a finger. The VoiceBot is like an automated assistant — but better.',
+			"Clients love the chatbot. It reminds them of appointments, suggests upgrades, and handles post-visit questions. We've had fewer no-shows and better upsells — all while spending less time on the phone.",
 		metrics: [
 			{
-				label: 'No-Show Reduction',
-				value: '–47%',
-				icon: <Users className="w-5 h-5" />,
+				label: 'No-shows',
+				value: '-35%',
+				icon: <Clock className="w-5 h-5" />,
 			},
 			{
-				label: 'Services Per Client',
-				value: '+36%',
+				label: 'Service upsells',
+				value: '+29%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Retention Rate',
-				value: '+42%',
-				icon: <Users className="w-5 h-5" />,
+				label: 'staff time saved daily',
+				value: '+1.9 hrs',
+				icon: <Clock className="w-5 h-5" />,
 			},
 		],
 	},
 	{
 		id: 9,
-		title: 'B2B Service Agencies',
+		title: 'Marketing / B2B Agencies',
 		testimonial:
-			'Our onboarding used to kill momentum. Now clients feel supported from day one. The bot provides updates and nudges them toward high-value services automatically.',
+			"We integrated the bot for onboarding, check-ins, and reporting. It delivers a premium experience without needing extra staff. Clients think it's human — and we look bigger and smarter.",
 		metrics: [
 			{
-				label: 'Onboarding Completion Rate',
-				value: '+58%',
+				label: 'Onboarding speed',
+				value: '+37%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Retainer Upsells',
-				value: '+46%',
+				label: 'Retainer upsell rate',
+				value: '+22%',
 				icon: <TrendingUp className="w-5 h-5" />,
 			},
 			{
-				label: 'Project Cycle Time',
-				value: '–3 days',
-				icon: <Clock className="w-5 h-5" />,
-			},
-		],
-	},
-	{
-		id: 10,
-		title: 'Online Bookstores & Niche Book Clubs',
-		testimonial:
-			'We were looking for a way to build relationships with our readers beyond the purchase. With this AI VoiceBot, we now deliver reading reminders, personalized summaries, and cross-sell recommendations without lifting a finger.',
-		metrics: [
-			{
-				label: 'Repeat Purchases',
-				value: '+32%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Customer Lifetime Value',
-				value: '+41%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Upsell Conversion Rate',
-				value: '+27%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Time Saved Weekly',
-				value: '6 hrs',
-				icon: <Clock className="w-5 h-5" />,
-			},
-		],
-	},
-	{
-		id: 11,
-		title: 'Pet Groomers & Dog Trainers',
-		testimonial:
-			'This tool became our assistant overnight. It reminds pet owners about care tips after each appointment, offers suggestions for treats and training sessions, and builds trust without us needing to call.',
-		metrics: [
-			{
-				label: 'Return Appointments',
-				value: '+38%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Add-On Sales',
-				value: '+29%',
-				icon: <TrendingUp className="w-5 h-5" />,
-			},
-			{
-				label: 'Client Retention',
-				value: '+34%',
-				icon: <Users className="w-5 h-5" />,
-			},
-			{
-				label: 'Support Time Cut',
-				value: '-45%',
+				label: 'saved per PM weekly',
+				value: '+3 hrs',
 				icon: <Clock className="w-5 h-5" />,
 			},
 		],

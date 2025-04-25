@@ -18,7 +18,7 @@ export const Support = () => {
 		},
 		{
 			icon: Phone,
-			title: 'Monthly Update Calls',
+			title: 'Monthly Check-In Calls',
 			description:
 				'Regular check-ins to discuss system performance, improvements, and future enhancements.',
 			gradient: 'from-[#FFA4A4] to-[#EB2525]',
@@ -32,14 +32,14 @@ export const Support = () => {
 		},
 		{
 			icon: BarChart3,
-			title: 'Data Analysis',
+			title: 'Data Reports & Trends',
 			description:
 				"Comprehensive analytics and insights to help you understand and optimize your AI's performance.",
 			gradient: 'from-[#FFA4A4] to-[#EB2525]',
 		},
 		{
 			icon: LayoutDashboard,
-			title: 'Custom Dashboard',
+			title: 'Feature Add-ons',
 			description:
 				'Personalized dashboard to monitor key metrics and system health in real-time.',
 			gradient: 'from-[#FFA4A4] to-[#EB2525]',
@@ -65,11 +65,11 @@ export const Support = () => {
 			<div className="lg:container md:container mx-auto relative z-10">
 				<div className="text-center max-w-6xl mx-auto mb-24">
 					<h2 className="text-4xl md:text-5xl pb-1 lg:text-7xl font-display font-medium text-gradient tracking-tight mb-5">
-						Not Just a VoiceBot <br/> A Long-Term Growth Partner
+						Not just a ChatBot <br /> a long-term growth partner
 					</h2>
 					<p className="text-white/60 font-regular leading-12 tracking-[-0.02em] text-xl sm:text-3xl">
-						Our dedicated support team ensures your AI system runs smoothly and
-						efficiently, with continuous monitoring and regular updates.
+						You don’t just get the tool. You get a full support system behind it
+						— always updated, always optimized, always online.
 					</p>
 				</div>
 

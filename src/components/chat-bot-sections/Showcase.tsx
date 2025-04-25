@@ -20,50 +20,55 @@ const industries = [
 		id: 'ecommerce',
 		name: 'E-commerce & Retail',
 		benefits: [
-			'Automates product inquiries and recommendations',
-			'Handles order status and tracking updates',
-			'Processes returns and exchanges efficiently',
-			'Provides 24/7 shopping assistance',
+			'Instantly answers product and delivery questions',
+			'Collects emails and qualifies leads for promotions',
+			'Shares discount codes, restock updates, and size info',
+			'Handles returns and refund requests with ease',
+			'Reduces abandoned carts by offering help in real-time',
 		],
 	},
 	{
 		id: 'healthcare',
 		name: 'Healthcare & Clinics',
 		benefits: [
-			'Automates appointment booking and confirmations',
-			'Sends reminders and follow-ups',
-			'Handles FAQs or intake info',
-			'Reduces call volume for human staff',
+			'Books and confirms appointments automatically',
+			'Sends pre-visit instructions and post-visit care tips',
+			'Answers FAQs (insurance, availability, procedures)',
+			'Collects patient info before the appointment',
+			'Works nights and weekends without wait time',
 		],
 	},
 	{
 		id: 'banking',
 		name: 'Banking & Fintech',
 		benefits: [
-			'Handles balance inquiries and simple transactions',
-			'Provides account status information',
-			'Assists with bill payments and transfers',
-			'Screens and routes complex inquiries to staff',
+			'Answers FAQs about transactions, limits, and accounts',
+			'Flags suspicious activity and explains next steps',
+			'Directs users to the correct department securely',
+			'Shares info about loans, cards, or investment options',
+			'Available 24/7 without waiting on hold',
 		],
 	},
 	{
 		id: 'logistics',
 		name: 'Logistics & Delivery',
 		benefits: [
-			'Tracks shipments and provides updates',
-			'Schedules pickups and deliveries',
-			'Handles delivery exceptions and rerouting',
-			'Provides estimates and service information',
+			'Tracks orders and updates customers instantly',
+			'Provides ETA, pickup, and delay explanations',
+			'Collects delivery issues for faster resolution',
+			'Shares return instructions and policies',
+			'Reduces pressure on human agents during high traffic',
 		],
 	},
 	{
 		id: 'realestate',
 		name: 'Real Estate & Property Management',
 		benefits: [
-			'Schedules property viewings and tours',
-			'Answers common property questions',
-			'Handles maintenance requests',
-			'Pre-qualifies potential buyers/renters',
+			'Answers questions about listings, rent, and availability',
+			'Books property tours or meetings with agents',
+			'Sends directions, brochures, and next steps automatically',
+			'Filters prospects by type, budget, and location',
+			'Reduces missed inquiries and boosts lead capture',
 		],
 	},
 ];
@@ -286,17 +291,19 @@ export const Showcase = () => {
 				{/* Heading area */}
 				<div className="text-center mb-16">
 					<h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-gradient tracking-tight mb-5">
-						This Is How Your Business Could{' '}
+						How Smart AI Chat Works in{' '}
 						<span className="relative inline-block">
 							<span className="relative z-10 bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] text-transparent bg-clip-text">
-								Sound
+								Your Industry
 							</span>
 						</span>
 					</h2>
 
 					<p className="text-md md:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-						Let your customers talk — our VoiceBot listens, answers, and acts
-						like a real assistant, trained just for your business.
+						Let your website visitors get instant answers — our AI ChatBot
+						handles support, sales, or scheduling with natural, human-like
+						conversation. It adapts to your business logic and talks just like
+						your best team member would.
 					</p>
 				</div>
 
@@ -383,7 +390,7 @@ export const Showcase = () => {
 				<div className="flex justify-center mt-16">
 					<ButtonHoverEffect>
 						<button
-							onClick={() => window.location.href = '/book-call'}
+							onClick={() => (window.location.href = '/book-call')}
 							className="px-6 py-3 rounded-full bg-black border-2 border-transparent bg-clip-padding relative font-medium flex items-center justify-center gap-2 w-full group hover:text-white transition-colors"
 							style={{
 								backgroundImage:

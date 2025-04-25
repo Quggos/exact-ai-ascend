@@ -5,7 +5,7 @@ import { useAudioPlayer } from 'react-use-audio-player';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
-import animationData from '../../../src/assets/animations/hero-animation-play.json';
+import animationData from '../../assets/animations/hero-animation-play.json';
 
 interface HeroProps {
 	scrollToSection: (id: string) => void;
@@ -107,17 +107,13 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
 
 			<div className="flex flex-col gap items-center relative z-10">
 				<div className="text-center px-4 max-w-3xl mx-auto animate-fade-in">
-					<div className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium mb-4">
-						AI Text Chat Assistants for Business
-					</div>
-
-					<h1 className="text-5xl lg:text-6xl text-gradient font-display font-medium tracking-tight mb-6">
-						Your Business, Elevated by Conversational AI
+					<h1 className="text-5xl lg:text-6xl text-gradient font-display font-medium tracking-tight mb-6 mt-3">
+						Your Always-On AI Chat Assistant — Custom-Built for Your Business
 					</h1>
 					<p className="text-md md:text-lg lg:text-xl text-muted-foreground mb-8">
-						EXACT AI creates intelligent text chat assistants that transform
-						customer interactions, automate support, and boost sales without
-						losing the personal touch.
+						Solve issues, answer questions, and convert leads in real time. This
+						ChatBot learns your workflows, speaks your tone, and handles
+						conversations — automatically.
 					</p>
 
 					<div className="flex flex-col gap-4 items-center">

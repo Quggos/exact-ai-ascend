@@ -16,14 +16,14 @@ export const Features = () => {
 			<div className="lg:container md:container mx-auto relative z-10">
 				<div className="text-center max-w-5xl mx-auto mb-12 sm:mb-16 md:mb-24">
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-black tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						Features That Drive Results
+						Features That Do More
 						<br />
-						Not Just Calls
+						Than Just Chat
 					</h2>
 					<p className="text-black/80 font-regular leading-relaxed tracking-[-0.02em] text-lg sm:text-xl md:text-3xl px-2 sm:px-0">
-						It's not just voice automation. It's smart, scalable infrastructure
-						designed to solve real business problems — faster, cleaner, and more
-						human.
+						It’s not a basic support bot. It’s your always-on, business-smart
+						assistant — trained to qualify leads, handle requests, and scale
+						conversations with ease.
 					</p>
 				</div>
 
@@ -35,13 +35,13 @@ export const Features = () => {
 								<BrainCircuit className="w-6 h-6 text-white" />
 							</div>
 							<h3 className="text-lg sm:text-2xl font-semibold text-black">
-								Emotion Detection
+								Smart Intent Detection
 							</h3>
 						</div>
 						<p className="text-black/80 text-base sm:text-lg">
-							Understands tone, urgency, and frustration in real time — so it
-							speaks calmly when tension rises, and knows when to hand off to a
-							human.
+							Smart Intent DetectionUnderstands the customer’s goal — whether
+							it’s booking, asking, complaining, or buying — and responds
+							accordingly, even with vague or mixed messages.
 						</p>
 					</div>
 
@@ -55,9 +55,9 @@ export const Features = () => {
 							</h3>
 						</div>
 						<p className="text-black/80 text-base sm:text-lg">
-							Supports over 100 languages and dialects with native-level
-							fluency. From Mandarin to Portuguese, it adapts instantly to your
-							customer's language — no manual setup.
+							Multi-Language SupportSpeaks and understands over 100 languages
+							instantly. No setup needed. Switches between them fluidly
+							depending on the customer — perfect for global businesses.
 						</p>
 					</div>
 
@@ -71,9 +71,9 @@ export const Features = () => {
 							</h3>
 						</div>
 						<p className="text-black/80 text-base sm:text-lg">
-							Every lead, every booking, every customer update — automatically
-							synced to your tools. Works seamlessly with Salesforce, HubSpot,
-							Zoho, Outlook, Google Calendar, and more.
+							CRM & Calendar IntegrationConnects to your tools — HubSpot,
+							Salesforce, Zoho, Google Calendar, and more. Every chat becomes a
+							lead, booking, or contact update. No copy-pasting needed.
 						</p>
 					</div>
 
@@ -87,9 +87,9 @@ export const Features = () => {
 							</h3>
 						</div>
 						<p className="text-black/80 text-base sm:text-lg">
-							Every Monday, your team receives a clear summary of performance:
-							calls handled, issues flagged, leads captured. Fully customized
-							for your managers — no dashboards to dig through.
+							Weekly Manager ReportSends your team a weekly summary: leads
+							captured, issues flagged, response accuracy, and more — so
+							managers stay informed without checking dashboards.
 						</p>
 					</div>
 
@@ -101,7 +101,7 @@ export const Features = () => {
 									<Database className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg text-black/80 text-center">
-									Script-Free Conversations
+									Context-Aware Follow-Ups
 								</h3>
 							</div>
 						</div>
@@ -112,7 +112,7 @@ export const Features = () => {
 									<BarChart3 className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg text-black/80 text-center">
-									Context Memory Between Calls
+									Real-Time Lead Capture & Qualification
 								</h3>
 							</div>
 						</div>
@@ -125,7 +125,7 @@ export const Features = () => {
 									<BrainCircuit className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg text-black/80 text-center">
-									Real-Time Lead Qualification
+									Fully Customizable Logic & Personality
 								</h3>
 							</div>
 						</div>
@@ -136,7 +136,7 @@ export const Features = () => {
 									<Globe className="w-6 h-6 text-white" />
 								</div>
 								<h3 className="text-lg text-black/80 text-center">
-									Fully Customizable to Your Workflow
+									Secure Data Handling
 								</h3>
 							</div>
 						</div>

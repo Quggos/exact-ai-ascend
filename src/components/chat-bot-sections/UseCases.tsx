@@ -11,11 +11,12 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 			<div className="lg:container md:container mx-auto">
 				<div className="text-center max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						Where VoiceBot Works Best
+						Where ChatBot Delivers Real Value
 					</h2>
 					<p className="text-black/60 leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-3xl">
-						Smart automation for the tasks that drain your time — from handling
-						support calls to making outbound sales and everything in between.
+						Smart automation for the messages your team shouldn’t handle — from
+						instant support replies to sales conversations and everything in
+						between.
 					</p>
 				</div>
 
@@ -36,37 +37,37 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Answers common questions automatically
+									Instantly answers repetitive customer questions
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Takes notes, creates tickets, routes calls
+									Collects key details, opens support tickets
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Handles high volumes with zero wait time
+									Handles unlimited chats at once
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Detects frustration & escalates smartly
+									Escalates complex issues to a real agent
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Available 24/7, speaks multiple languages
+									Remembers returning users for smoother help
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Can call back missed customers if needed
+									Available 24/7 in over 100 languages
 								</span>
 							</li>
 						</ul>
@@ -94,37 +95,37 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Makes outbound calls and follows up leads
+									Qualifies leads through smart questions
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Qualifies prospects with smart conversations
+									Engages site visitors in real time
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Books meetings straight to your calendar
+									Books meetings directly to your calendar
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Handles cold outreach with perfect scripts
+									Sends follow-ups and product info
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Works alongside your team — not instead of
+									Seamlessly integrates with your CRM
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Connects to your CRM in real time
+									Boosts conversions without extra headcount
 								</span>
 							</li>
 						</ul>
@@ -152,37 +153,37 @@ export const UseCases = ({ scrollToSection }: UseCasesProps) => {
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									HR screening, appointment reminders, surveys
+									Built around your workflow (HR, billing, onboarding, etc.)
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Order status updates or billing automation
+									Chat flows personalized to your tone and logic
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Voice workflows built around your process
+									Works across site, app, or WhatsApp
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Full control over tone, logic, and scripts
+									Supports internal teams or external clients
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									Inbound, outbound — or both
+									Inbound, outbound, or both — your choice
 								</span>
 							</li>
 							<li className="flex items-center justify-start gap-2">
 								<span className="text-blue-500">✓</span>
 								<span className="text-black/70 text-md sm:text-base text-left tracking-[-0.02em]">
-									We build and maintain it all for you
+									Fully managed and updated by our team
 								</span>
 							</li>
 						</ul>

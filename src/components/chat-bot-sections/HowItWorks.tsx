@@ -19,9 +19,9 @@ export const HowItWorks = () => {
 						Again
 					</h2>
 					<p className="text-white/80 max-w-6xl mx-auto leading-relaxed sm:leading-12 tracking-[-0.02em] text-base sm:text-xl md:text-3xl">
-						No voicemails. No dropped calls. No missed opportunities. Every
-						caller gets an immediate response, even outside working hours —
-						turning lost chances into captured leads.
+						Smart automation that turns website visitors into conversations,
+						support into satisfaction, and missed chats into sales — even while
+						your team sleeps.
 					</p>
 				</div>
 
@@ -31,7 +31,7 @@ export const HowItWorks = () => {
 						<div className="w-full md:w-1/2 flex justify-center items-center">
 							<div className="w-full h-[300px] max-w-[300px] md:h-[400px] md:max-w-[400px] lg:h-[400px] lg:w-[400px] relative flex items-center justify-center">
 								<img
-									src="/frame-67.png"
+									src="/visitors-chat-bot.png"
 									alt="Team member"
 									className="w-full h-full object-contain"
 								/>
@@ -39,12 +39,12 @@ export const HowItWorks = () => {
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
-								Answer 100% of inbound calls, instantly
+								Engage 100% of Website Visitors, Instantly
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em]">
-								No voicemails. No dropped calls. No missed opportunities. Every
-								caller gets an immediate response, even outside working hours —
-								turning lost chances into captured leads.
+								No missed questions. No lost leads. Every visitor gets instant,
+								intelligent answers — 24/7. Even off-hours chats get handled,
+								boosting trust and conversions around the clock.
 							</p>
 						</div>
 					</div>
@@ -54,7 +54,7 @@ export const HowItWorks = () => {
 						<div className="w-full md:w-1/2 flex justify-center items-center">
 							<div className="w-full h-[300px] max-w-[300px] md:h-[400px] md:max-w-[400px] lg:h-[400px] lg:w-[400px] relative flex items-center justify-center">
 								<img
-									src="/frame-68.png"
+									src="/customer-chat-bot.png"
 									alt="Laptop"
 									className="w-full h-full object-contain"
 								/>
@@ -62,13 +62,12 @@ export const HowItWorks = () => {
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
-								Handle 90% of Customer Queries
+								Resolve 90% of Customer Inquiries Without Human Help
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em]">
-								Let your voicebot take care of the repetitive stuff — instantly
-								answering common questions, guiding callers, and escalating when
-								needed. It frees up your team and makes customers feel heard
-								faster.
+								Let the chatbot take care of FAQs, order status, appointments,
+								and more — so your team handles only what truly needs them.
+								Customers get fast help. Your staff gets time back.
 							</p>
 						</div>
 					</div>
@@ -78,7 +77,7 @@ export const HowItWorks = () => {
 						<div className="w-full md:w-1/2 flex justify-center items-center">
 							<div className="w-full h-[300px] max-w-[300px] md:h-[400px] md:max-w-[400px] lg:h-[400px] lg:w-[400px] relative flex items-center justify-center">
 								<img
-									src="/frame-69.png"
+									src="/insights-chat-bot.png"
 									alt="Team"
 									className="w-full h-full object-contain"
 								/>
@@ -86,13 +85,13 @@ export const HowItWorks = () => {
 						</div>
 						<div className="w-full md:w-1/2 mt-6 md:mt-0">
 							<h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[-0.02em] text-gradient mb-4 sm:mb-6 pb-1">
-								Get Reports Your CEO Will Love
+								Insights Your CEO Actually Uses
 							</h3>
 							<p className="text-white/70 text-base sm:text-xl md:text-2xl leading-relaxed tracking-[-0.02em] mb-4">
-								Real-time dashboards that show exactly what's happening: calls
-								handled, leads qualified, issues flagged, and more. Delivered
-								daily or weekly — clear, customized insights without the
-								clutter.
+								Track what matters: response time, issues flagged, leads
+								captured. Get clear, actionable dashboards — delivered weekly,
+								tailored to your business goals. No fluff. Just data that drives
+								decisions.
 							</p>
 						</div>
 					</div>

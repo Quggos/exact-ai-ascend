@@ -11,7 +11,9 @@ interface IntegrationProcessProps {
 	scrollToSection: (id: string) => void;
 }
 
-export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps) => {
+export const IntegrationProcess = ({
+	scrollToSection,
+}: IntegrationProcessProps) => {
 	return (
 		<section
 			id="how-it-works"
@@ -20,12 +22,12 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 			<div className="lg:container md:container mx-auto">
 				<div className="text-center mb-12 sm:mb-16 lg:mb-20">
 					<h2 className="text-4xl sm:text-5xl pb-1 md:text-6xl lg:text-7xl font-medium text-gradient tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8">
-						What AI integration process looks like?
+						How it works
 					</h2>
 					<p className="text-white/70 max-w-3xl mx-auto text-base sm:text-lg md:text-3xl">
-						Schedule a consultation with our AI specialists to discuss your
-						specific needs and discover how EXACT AI can elevate your customer
-						interactions.
+						What ChatBot integration looks likeSchedule a free demo and explore
+						how our AI ChatBot fits into your business — from customer support
+						to lead generation, we tailor it all to your goals.
 					</p>
 				</div>
 
@@ -47,10 +49,10 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 									Free Demo & Consultation
 								</h3>
 								<p className="text-white/60 text-base sm:text-lg">
-									We start with a live demo so you can hear exactly how it
-									works. Then we jump on a quick strategy call to understand
-									your workflows and explore where the VoiceBot will save the
-									most time and money.
+									We kick things off with a short live demo to show how the
+									ChatBot actually works. Then we run a discovery session to
+									understand your use case, workflows, and what success would
+									look like.
 								</p>
 							</div>
 						</div>
@@ -67,12 +69,12 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 									2
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
-									Custom Voice Workflow Design
+									Conversation Flow Design
 								</h3>
 								<p className="text-white/60 text-base sm:text-lg">
-									We map out the best voice flows for your use case — inbound or
-									outbound — and align everything with your systems, tone, and
-									business goals.
+									We design your chatbot’s logic, tone, and replies — all
+									aligned with your brand voice and customer journey. Every
+									message is written to convert, solve, or engage.
 								</p>
 							</div>
 						</div>
@@ -92,12 +94,12 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 									3
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
-									Bot Development & Seamless Integration
+									Bot Setup & System Integration
 								</h3>
 								<p className="text-white/60 text-base sm:text-lg">
-									Our team builds your tailored VoiceBot and integrates it with
-									your tools (CRM, calendar, helpdesk, etc.). You don't need to
-									touch a single line of code.
+									Our team builds and connects the ChatBot to your website, CRM,
+									helpdesk, or any tools you use. Everything is tailored — no
+									templates, no coding needed from your side.
 								</p>
 							</div>
 						</div>
@@ -114,12 +116,12 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 									4
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
-									Staff Onboarding & Training
+									Team Onboarding & Launch
 								</h3>
 								<p className="text-white/60 text-base sm:text-lg">
-									We train your team, share how to track performance, and
-									provide easy instructions for updating content or making
-									adjustments.
+									We train your team on how to use the bot, update replies, and
+									track performance. Then we go live — with your custom chatbot
+									up and running on your platform.
 								</p>
 							</div>
 						</div>
@@ -136,12 +138,12 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 									5
 								</div>
 								<h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
-									Ongoing Optimization & Support
+									Ongoing Improvements & Support
 								</h3>
 								<p className="text-white/60 text-base sm:text-lg">
-									After launch, we continuously monitor, improve, and support
-									your VoiceBot. You'll get regular usage reports, insights, and
-									access to priority support — anytime.
+									We monitor usage, improve responses, and support you
+									long-term. Expect reports, insights, and hands-on help — your
+									bot gets smarter with every interaction.
 								</p>
 							</div>
 						</div>
@@ -151,7 +153,7 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 				<div className="flex flex-row justify-center gap-4 mt-12 sm:mt-16">
 					<ButtonHoverEffect className="w-fit">
 						<button
-							onClick={() => window.location.href = '/book-call'}
+							onClick={() => (window.location.href = '/book-call')}
 							className="px-5 py-3 sm:px-8 sm:py-4 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
 							style={{
 								backgroundImage:
