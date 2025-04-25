@@ -1,3 +1,18 @@
 {
-	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+	"routes": [
+		{ "src": "/chat-bot", "dest": "/index.html" },
+		{ "src": "/about-us", "dest": "/index.html" },
+		{ "src": "/privacy-policy", "dest": "/index.html" },
+		{ "src": "/terms-of-service", "dest": "/index.html" },
+		{ "src": "/contact-us", "dest": "/index.html" },
+		{ "src": "/book-call", "dest": "/index.html" },
+		{ "handle": "filesystem" },
+		{ "src": "/(.*)", "dest": "/index.html" }
+	],
+	"build": {
+		"env": {
+			"ENABLE_FILE_SYSTEM_API": "1"
+		}
+	}
 }
