@@ -106,9 +106,9 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
 			</div>
 
 			<div className="flex flex-col gap items-center relative z-10">
-				<div className="text-center px-4 max-w-3xl mx-auto animate-fade-in">
+				<div className="text-center px-4 max-w-5xl mx-auto animate-fade-in">
 					<h1 className="text-5xl lg:text-6xl text-gradient font-display font-medium tracking-tight mb-6 mt-3">
-						Your Always-On AI Chat Assistant — Custom-Built for Your Business
+						Your Always-On AI Chat Assistant. Custom-Built for Your Business
 					</h1>
 					<p className="text-md md:text-lg lg:text-xl text-muted-foreground mb-8">
 						Solve issues, answer questions, and convert leads in real time. This
