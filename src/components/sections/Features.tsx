@@ -34,7 +34,7 @@ export const Features = () => {
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<BrainCircuit className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-lg sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-black">
 								Emotion Detection
 							</h3>
 						</div>
@@ -50,7 +50,7 @@ export const Features = () => {
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Globe className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-lg sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-black">
 								Multi-Lingual
 							</h3>
 						</div>
@@ -66,7 +66,7 @@ export const Features = () => {
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<Zap className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-lg sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-black">
 								CRM & Calendar Integration
 							</h3>
 						</div>
@@ -82,7 +82,7 @@ export const Features = () => {
 							<div className="min-w-[48px] w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] flex items-center justify-center mr-4">
 								<MessageSquareDot className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-lg sm:text-2xl font-semibold text-white">
+							<h3 className="text-lg sm:text-2xl font-semibold text-black">
 								Weekly Executive Report
 							</h3>
 						</div>

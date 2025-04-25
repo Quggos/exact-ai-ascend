@@ -49,14 +49,14 @@ const ContactUs = () => {
 								<div className="space-y-4 text-gray-300">
 									<div>
 										<p className="font-medium">Email</p>
-										<a href="mailto:hello@nextapp.com" className="hover:text-[#FC576E] transition-colors">
-											hello@nextapp.com
+										<a href="mailto:contact@exct.com" className="hover:text-[#FC576E] transition-colors">
+											contact@exct.com
 										</a>
 									</div>
 									<div>
 										<p className="font-medium">Phone</p>
-										<a href="tel:+15551234567" className="hover:text-[#FC576E] transition-colors">
-											+1 (555) 123-4567
+										<a href="tel:+13155570024" className="hover:text-[#FC576E] transition-colors">
+											+1 (315) 557-0024
 										</a>
 									</div>
 									<div>

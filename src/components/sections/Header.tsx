@@ -107,7 +107,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 				<div className="container mx-auto px-4 sm:px-6 py-2">
 					<div className="flex items-center justify-between">
 						{/* Left section - Logo */}
-						<div className="w-[82px] sm:w-[96px]">
+						<div className="w-[64px] sm:w-[80px]">
 							<a href="/" className="block hover:opacity-90 transition-opacity">
 								<NextLogo />
 							</a>
@@ -211,7 +211,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 							<div className="hidden sm:block">
 								<ButtonHoverEffect>
 									<button
-										onClick={() => scrollToSection('integration')}
+										onClick={() => window.location.href = '/book-call'}
 										className="px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
 										style={{
 											backgroundImage:
@@ -339,7 +339,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 						<div className="pt-2">
 							<ButtonHoverEffect className="w-full">
 								<button
-									onClick={() => handleNavClick('integration')}
+									onClick={() => window.location.href = '/book-call'}
 									className=" px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
 									style={{
 										backgroundImage:

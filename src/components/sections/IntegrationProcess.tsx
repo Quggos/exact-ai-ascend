@@ -151,7 +151,7 @@ export const IntegrationProcess = ({ scrollToSection }: IntegrationProcessProps)
 				<div className="flex flex-row justify-center gap-4 mt-12 sm:mt-16">
 					<ButtonHoverEffect className="w-fit">
 						<button
-							onClick={() => scrollToSection('demo')}
+							onClick={() => window.location.href = '/book-call'}
 							className="px-5 py-3 sm:px-8 sm:py-4 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
 							style={{
 								backgroundImage:

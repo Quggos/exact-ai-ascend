@@ -121,7 +121,7 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
           <div className="flex flex-col gap-4 items-center">
             <ButtonHoverEffect>
               <button 
-                onClick={() => scrollToSection("demo")}
+                onClick={() => window.location.href = '/book-call'}
                 className="px-6 py-3 rounded-full bg-black border-2 border-transparent bg-clip-padding relative font-medium flex items-center justify-center gap-2 w-full group hover:text-white transition-colors"
                 style={{ 
                   backgroundImage: 'linear-gradient(black, black), linear-gradient(to right, #FFA57A, #FC576E)',

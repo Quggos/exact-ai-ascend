@@ -10,7 +10,7 @@ export const Footer = () => {
 	};
 
 	return (
-		<footer className="glass-morphism border-t border-white/5 py-8 sm:py-12">
+		<footer className="glass-morphism border-t border-white/5 py-8 sm:pt-12">
 			<div className="container mx-auto px-4 sm:px-6">
 				<div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
 					<div className="mb-4 max-w-xs sm:mb-0">
@@ -19,7 +19,7 @@ export const Footer = () => {
 							className="block mb-4 hover:opacity-90 transition-opacity cursor-pointer"
 							aria-label="Scroll to top"
 						>
-							<NextLogo className="w-[82px] sm:w-[96px]" />
+							<NextLogo className="w-[82px] sm:w-[98px]" />
 						</button>
 						<p className="text-xs sm:text-sm text-muted-foreground mb-4">
 							Transforming business communication with advanced AI text chat
@@ -94,7 +94,7 @@ export const Footer = () => {
 							</li>
 							<li>
 								<a
-									href="#next-steps"
+									href="/book-call"
 									className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
 								>
 									Book a Call
