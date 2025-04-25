@@ -52,12 +52,12 @@ export const Footer = () => {
 						</h4>
 						<ul className="space-y-1.5 sm:space-y-2">
 							<li>
-								<a
-									href="#"
+								<Link
+									to="/about-us"
 									className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
 								>
 									About Us
-								</a>
+								</Link>
 							</li>
 							<li>
 								<Link

@@ -11,6 +11,7 @@ import TermsOfService from './pages/TermsOfService';
 import ContactUs from './pages/ContactUs';
 import BookCall from './pages/BookCall';
 import { ChatBotPage } from './pages/ChatBotPage';
+import AboutUs from './pages/AboutUs';
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -38,6 +39,7 @@ const App = () => (
 					<Route path="/terms-of-service" element={<TermsOfService />} />
 					<Route path="/contact-us" element={<ContactUs />} />
 					<Route path="/book-call" element={<BookCall />} />
+					<Route path="/about-us" element={<AboutUs />} />
 					{/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
 					<Route path="*" element={<NotFound />} />
 				</Routes>
