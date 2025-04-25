@@ -1,101 +1,15 @@
 import { ButtonHoverEffect } from '@/components/ui/button-hover-effect';
-import { MessageSquare, Play, Pause, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import Aurora from '@/blocks/Backgrounds/Aurora/Aurora';
-import { useAudioPlayer } from 'react-use-audio-player';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import Lottie from 'lottie-react';
-import animationData from '../../assets/animations/hero-animation-play.json';
+import { ChatInterface } from '@/components/ChatInterface';
 
 interface HeroProps {
 	scrollToSection: (id: string) => void;
 }
 
-const AudioPlayer = () => {
-	const [isPlaying, setIsPlaying] = useState(false);
-	const { load, play, pause } = useAudioPlayer();
-
-	useEffect(() => {
-		// Load your audio file here
-		load('/hero-audio.mp3', {
-			autoplay: false,
-			loop: false,
-			onend: () => {
-				setIsPlaying(false);
-			},
-		});
-	}, [load]);
-
-	const togglePlay = () => {
-		if (isPlaying) {
-			pause();
-		} else {
-			play();
-		}
-		setIsPlaying(!isPlaying);
-	};
-
-	return (
-		<div className="relative">
-			<AnimatePresence>
-				{isPlaying && (
-					<motion.div
-						initial={{ scale: 0, opacity: 0 }}
-						animate={{ scale: 1, opacity: 1 }}
-						exit={{ scale: 0, opacity: 0 }}
-						className="absolute -inset-24 flex items-center justify-center"
-					>
-						<Lottie
-							animationData={animationData}
-							loop={true}
-							className="w-128 h-128"
-						/>
-					</motion.div>
-				)}
-			</AnimatePresence>
-
-			<motion.button
-				onClick={togglePlay}
-				className="relative w-20 h-20 rounded-full bg-black/20 backdrop-blur-sm border border-white/10 flex items-center justify-center group z-10"
-				whileHover={{ scale: 1.05 }}
-				whileTap={{ scale: 0.95 }}
-			>
-				<AnimatePresence mode="wait">
-					{!isPlaying && (
-						<motion.div
-							key="play"
-							initial={{ scale: 0, opacity: 0 }}
-							animate={{ scale: 1, opacity: 1 }}
-							exit={{ scale: 0, opacity: 0 }}
-							className="absolute inset-0 rounded-full bg-gradient-to-br from-[#FFA4A4] to-[#EB2525] opacity-0 group-hover:opacity-100 transition-opacity"
-						/>
-					)}
-				</AnimatePresence>
-
-				<motion.div
-					animate={{
-						scale: isPlaying ? [1, 1.2, 1] : 1,
-					}}
-					transition={{
-						duration: 2,
-						repeat: isPlaying ? Infinity : 0,
-						ease: 'linear',
-					}}
-				>
-					{isPlaying ? (
-						<Pause className="w-15 h-15 text-white relative z-10" />
-					) : (
-						<Play className="w-15 h-15 text-white relative z-10" />
-					)}
-				</motion.div>
-			</motion.button>
-		</div>
-	);
-};
-
 export const Hero = ({ scrollToSection }: HeroProps) => {
 	return (
-		<section className="relative pt-28 pb-0.5 overflow-hidden">
+		<section className="relative pt-20 lg:pt-28 overflow-hidden">
 			<div className="absolute opacity-60 inset-0 w-full h-[50vh]">
 				<Aurora
 					colorStops={['#FFA57A', '#FC576E', '#7174C7']}
@@ -107,7 +21,7 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
 
 			<div className="flex flex-col gap items-center relative z-10">
 				<div className="text-center px-4 max-w-5xl mx-auto animate-fade-in">
-					<h1 className="text-5xl lg:text-6xl text-gradient font-display font-medium tracking-tight mb-6 mt-3">
+					<h1 className="text-4xl lg:text-6xl text-gradient font-display font-medium tracking-tight mb-6 mt-3">
 						Your Always-On AI Chat Assistant. Custom-Built for Your Business
 					</h1>
 					<p className="text-md md:text-lg lg:text-xl text-muted-foreground mb-8">
@@ -138,21 +52,24 @@ export const Hero = ({ scrollToSection }: HeroProps) => {
 					</div>
 				</div>
 
-				<div className="relative -z-10 animate-fade-in w-full lg:-mt-8 mt-6 sm:mt-8">
-					<div className="relative">
-						<img
-							src="/hero-voice-d.png"
-							alt="EXACT AI Chat Interface"
-							className="w-full h-auto hidden lg:block"
-						/>
-						<img
-							src="/hero-mobile.png"
-							alt="EXACT AI Chat Interface Mobile"
-							className="w-full h-auto block lg:hidden"
-						/>
+				<div className="relative w-full animate-fade-in">
+					<div className="relative w-full overflow-hidden">
+						<div className="relative h-[1100px] lg:h-[1100px] w-[1800px] lg:w-[2200px] left-1/2 -mb-12 lg:-mb-0 -translate-x-1/2">
+							<img
+								src="/hero-chat-d.png"
+								alt="NEXT APP Chat Interface"
+								className="w-full h-full object-contain hidden lg:block absolute inset-0"
+								style={{ objectPosition: '50% 45%' }}
+							/>
+							<img
+								src="/hero-chat-m.png"
+								alt="NEXT APP Chat Interface Mobile"
+								className="w-full h-full object-contain block -mt-12 lg:hidden absolute inset-0"
+							/>
 
-						<div className="absolute bottom-[30%] lg:bottom-[40%] left-1/2 transform -translate-x-1/2">
-							<AudioPlayer />
+							<div className="absolute top-[4.9%] lg:top-[5.1%] left-1/2 -translate-x-1/2 w-full max-w-[360px] lg:max-w-[414px] px-4">
+								<ChatInterface mobileHeight={667} desktopHeight={778} />
+							</div>
 						</div>
 					</div>
 				</div>
