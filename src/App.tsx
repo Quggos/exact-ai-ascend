@@ -10,6 +10,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ContactUs from './pages/ContactUs';
 import BookCall from './pages/BookCall';
+import AltPage from './pages/AltPage';
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -32,6 +33,7 @@ const App = () => (
 				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Index />} />
+					<Route path="/alt" element={<AltPage />} />
 					<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 					<Route path="/terms-of-service" element={<TermsOfService />} />
 					<Route path="/contact-us" element={<ContactUs />} />

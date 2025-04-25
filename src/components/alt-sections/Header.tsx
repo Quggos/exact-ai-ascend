@@ -20,6 +20,13 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 		);
 	}, []);
 
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
+
 	const toggleMobileMenu = () => {
 		if (isAnimating) return;
 
@@ -102,25 +109,18 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 		? 'bg-transparent transition-all duration-300'
 		: 'bg-black backdrop-blur-xl transition-all duration-300';
 
-	const navigation = [
-		{ name: 'Home', href: '/' },
-		{ name: 'Features', href: '/#features' },
-		{ name: 'Pricing', href: '/#pricing' },
-		{ name: 'Contact', href: '/contact-us' },
-		{ name: 'Book Call', href: '/book-call' },
-	];
-
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50">
 			<div className={headerBgClasses}>
 				<div className="container mx-auto px-4 sm:px-6 py-2">
 					<div className="flex items-center justify-between">
 						{/* Left section - Logo */}
-						<div className="w-[64px] sm:w-[80px]">
-							<a href="/" className="block hover:opacity-90 transition-opacity">
-								<NextLogo />
-							</a>
-						</div>
+						<button
+							onClick={scrollToTop}
+							className="block hover:opacity-90 w-[64px] sm:w-[80px]  transition-opacity"
+						>
+							<NextLogo />
+						</button>
 
 						{/* Center section - Navigation for larger screens */}
 						<div className="hidden lg:flex flex-1 justify-center">
@@ -177,7 +177,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 									href="https://facebook.com/61574399337370/"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="hover:text-[#FC576E] transition-colors"
+									className="hover:text-[#7AC7FF] transition-colors"
 								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +197,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 									href="https://linkedin.com/company/exct"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="hover:text-[#FC576E] transition-colors"
+									className="hover:text-[#7AC7FF] transition-colors"
 								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +252,7 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 				<div className="container mx-auto px-4 py-4">
 					<nav className="flex flex-col space-y-2 justify-center items-start">
 						<button
-							onClick={() => handleNavClick('hero')}
+							onClick={scrollToTop}
 							className="text-md font-medium py-2 hover:text-primary transition-colors"
 						>
 							Home
@@ -299,69 +299,23 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 						>
 							Integration
 						</button>
-
-						<div className="flex items-center gap-4 py-2">
-							<a
-								href="https://facebook.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-[#FC576E] transition-colors"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="2"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								>
-									<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-								</svg>
-							</a>
-							<a
-								href="https://linkedin.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-[#FC576E] transition-colors"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="2"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-								>
-									<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-									<rect width="4" height="12" x="2" y="9" />
-									<circle cx="4" cy="4" r="2" />
-								</svg>
-							</a>
-						</div>
-
-						<div className="mt-6">
-							<ButtonHoverEffect>
-								<button
-									onClick={() => (window.location.href = '/book-call')}
-									className="w-full px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
-									style={{
-										backgroundImage:
-											'linear-gradient(black, black), linear-gradient(to right, #7AC7FF, #57C9FC)',
-										backgroundOrigin: 'border-box',
-										backgroundClip: 'padding-box, border-box',
-									}}
-								>
-									Book a Call
-								</button>
-							</ButtonHoverEffect>
-						</div>
 					</nav>
+					<div className="mt-6">
+						<ButtonHoverEffect>
+							<button
+								onClick={() => (window.location.href = '/book-call')}
+								className="w-full px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-black/80 transition-colors border-2 border-transparent bg-clip-padding"
+								style={{
+									backgroundImage:
+										'linear-gradient(black, black), linear-gradient(to right, #7AC7FF, #57C9FC)',
+									backgroundOrigin: 'border-box',
+									backgroundClip: 'padding-box, border-box',
+								}}
+							>
+								Book a Call
+							</button>
+						</ButtonHoverEffect>
+					</div>
 				</div>
 			</div>
 		</header>
