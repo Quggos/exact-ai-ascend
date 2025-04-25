@@ -107,21 +107,21 @@ const voiceSamples = [
 		},
 	},
 	{
-		id: 'fr',
-		language: 'French',
-		flag: '🇫🇷',
+		id: 'jp',
+		language: 'Japanese',
+		flag: '🇯🇵',
 		transcript:
-			'Bonjour, je peux vous aider à prendre rendez-vous dans notre clinique.',
+			'こんにちは、当院の予約のお手伝いをさせていただきます。',
 		waveform: [
 			15, 30, 20, 38, 25, 18, 32, 40, 22, 28, 35, 15, 25, 30, 18, 42, 30, 20,
 			28, 10,
 		],
 		audioFiles: {
-			ecommerce: '/audio/ecommerce/fr.mp3',
-			healthcare: '/audio/healthcare/fr.mp3',
-			banking: '/audio/banking/fr.mp3',
-			logistics: '/audio/logistics/fr.mp3',
-			realestate: '/audio/realestate/realestate/fr.mp3',
+			ecommerce: '/audio/ecommerce/jp.mp3',
+			healthcare: '/audio/healthcare/jp.mp3',
+			banking: '/audio/banking/jp.mp3',
+			logistics: '/audio/logistics/jp.mp3',
+			realestate: '/audio/realestate/jp.mp3',
 		},
 	},
 ];
@@ -129,6 +129,8 @@ const voiceSamples = [
 interface AudioSampleProps {
 	sample: (typeof voiceSamples)[0];
 	currentIndustry: string;
+	currentlyPlaying: string | null;
+	setCurrentlyPlaying: (id: string | null) => void;
 }
 
 const WaveformAnimation = ({
@@ -159,12 +161,26 @@ const WaveformAnimation = ({
 	</div>
 );
 
-const AudioSample = ({ sample, currentIndustry }: AudioSampleProps) => {
+const AudioSample = ({ sample, currentIndustry, currentlyPlaying, setCurrentlyPlaying }: AudioSampleProps) => {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [progress, setProgress] = useState(0);
 	const [duration, setDuration] = useState(0);
 	const audioRef = useRef<HTMLAudioElement | null>(null);
 	const intervalRef = useRef<number | null>(null);
+
+	// Stop playing when another audio starts
+	useEffect(() => {
+		if (currentlyPlaying && currentlyPlaying !== sample.id && isPlaying) {
+			if (audioRef.current) {
+				audioRef.current.pause();
+				if (intervalRef.current) {
+					clearInterval(intervalRef.current);
+				}
+				setIsPlaying(false);
+				setProgress(0);
+			}
+		}
+	}, [currentlyPlaying, sample.id, isPlaying]);
 
 	useEffect(() => {
 		// Create audio element
@@ -180,6 +196,7 @@ const AudioSample = ({ sample, currentIndustry }: AudioSampleProps) => {
 		audioRef.current.addEventListener('ended', () => {
 			setIsPlaying(false);
 			setProgress(0);
+			setCurrentlyPlaying(null);
 		});
 
 		return () => {
@@ -191,7 +208,7 @@ const AudioSample = ({ sample, currentIndustry }: AudioSampleProps) => {
 				clearInterval(intervalRef.current);
 			}
 		};
-	}, [sample, currentIndustry]);
+	}, [sample, currentIndustry, setCurrentlyPlaying]);
 
 	const togglePlay = () => {
 		if (!audioRef.current) return;
@@ -201,7 +218,9 @@ const AudioSample = ({ sample, currentIndustry }: AudioSampleProps) => {
 			if (intervalRef.current) {
 				clearInterval(intervalRef.current);
 			}
+			setCurrentlyPlaying(null);
 		} else {
+			setCurrentlyPlaying(sample.id);
 			audioRef.current.play();
 			intervalRef.current = window.setInterval(() => {
 				if (audioRef.current) {
@@ -269,6 +288,7 @@ const IndustryIcon = ({ icon }: { icon: React.ReactNode }) => (
 
 export const Showcase = () => {
 	const [activeIndustry, setActiveIndustry] = useState('ecommerce');
+	const [currentlyPlaying, setCurrentlyPlaying] = useState<string | null>(null);
 
 	// Get the current industry data
 	const currentIndustry =
@@ -370,6 +390,8 @@ export const Showcase = () => {
 											<AudioSample
 												sample={sample}
 												currentIndustry={activeIndustry}
+												currentlyPlaying={currentlyPlaying}
+												setCurrentlyPlaying={setCurrentlyPlaying}
 											/>
 										</motion.div>
 									))}
