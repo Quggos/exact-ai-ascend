@@ -1,14 +1,14 @@
 import { useRef, useState, useEffect } from 'react';
 import { Header } from '@/components/alt-sections/Header';
 import { Hero } from '@/components/alt-sections/Hero';
-import { Footer } from '@/components/sections/Footer';
-import { UseCases } from '@/components/sections/UseCases';
-import { HowItWorks } from '@/components/sections/HowItWorks';
+import { Footer } from '@/components/alt-sections/Footer';
+import { UseCases } from '@/components/alt-sections/UseCases';
+import { HowItWorks } from '@/components/alt-sections/HowItWorks';
 import { Features } from '@/components/alt-sections/Features';
 import { Support } from '@/components/alt-sections/Support';
-import { IntegrationProcess } from '@/components/sections/IntegrationProcess';
-import { Showcase } from '@/components/sections/Showcase';
-import ProvenResults from '@/components/sections/Results';
+import { IntegrationProcess } from '@/components/alt-sections/IntegrationProcess';
+import { Showcase } from '@/components/alt-sections/Showcase';
+import ProvenResults from '@/components/alt-sections/Results';
 
 const AltPage = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -29,7 +29,6 @@ const AltPage = () => {
 	return (
 		<div className="min-h-screen bg-black text-foreground overflow-x-hidden">
 			<Header isSticky={isSticky} scrollToSection={scrollToSection} />
-
 			<main>
 				<Hero scrollToSection={scrollToSection} />
 				<div id="use-cases">
