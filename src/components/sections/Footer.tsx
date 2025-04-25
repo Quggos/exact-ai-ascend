@@ -10,7 +10,7 @@ export const Footer = () => {
 	};
 
 	return (
-		<footer className="glass-morphism border-t border-white/5 py-8 sm:pt-12">
+		<footer className="bg-black border-t border-white/10 py-8 sm:pt-12">
 			<div className="container mx-auto px-4 sm:px-6">
 				<div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
 					<div className="mb-4 max-w-xs sm:mb-0">

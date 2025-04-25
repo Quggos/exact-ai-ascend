@@ -11,7 +11,12 @@ interface HeaderProps {
 export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [isAnimating, setIsAnimating] = useState(false);
+	const [isMainPage, setIsMainPage] = useState(false);
 	const menuRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		setIsMainPage(window.location.pathname === '/');
+	}, []);
 
 	const toggleMobileMenu = () => {
 		if (isAnimating) return;
@@ -86,12 +91,14 @@ export const Header = ({ isSticky, scrollToSection }: HeaderProps) => {
 		? 'lg:hidden bg-black backdrop-blur-xl absolute top-full left-0 right-0 animate-fade-in border-t border-white/10'
 		: 'lg:hidden bg-black backdrop-blur-xl absolute top-full left-0 right-0 animate-fade-out opacity-0 pointer-events-none border-t border-white/10';
 
-	// Create header background classes based on screen size and menu state
+	// Create header background classes based on screen size, menu state, and current page
 	const headerBgClasses = isSticky
 		? 'bg-black backdrop-blur-xl transition-all duration-300'
 		: mobileMenuOpen
 		? 'lg:bg-black lg:backdrop-blur-none lg:transition-all lg:duration-300 bg-black backdrop-blur-xl'
-		: 'bg-transparent transition-all duration-300';
+		: isMainPage
+		? 'bg-transparent transition-all duration-300'
+		: 'bg-black backdrop-blur-xl transition-all duration-300';
 
 	const navigation = [
 		{ name: 'Home', href: '/' },
